@@ -1,0 +1,91 @@
+\hypertarget{_uklad_rownan_liniowych_8hh}{
+\section{Dokumentacja pliku UkladRownanLiniowych.hh}
+\label{_uklad_rownan_liniowych_8hh}\index{UkladRownanLiniowych.hh@{UkladRownanLiniowych.hh}}
+}
+
+
+Klasa \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych} modeluje w programie \hyperlink{class_macierz}{Macierz} wspolczynnikow rownania, wektor wyrazow wolnych. Sklada sie z metody do rozwiazania ukladu i wyswietlenia tego rozwiazania.  
+
+
+{\ttfamily \#include \char`\"{}Macierz.hh\char`\"{}}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$cstdlib$>$}\par
+Wykres zależności załączania dla UkladRownanLiniowych.hh:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=373pt]{_uklad_rownan_liniowych_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_uklad_rownan_liniowych_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych$<$ Typ, ROZMIAR $>$}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\istream \& \hyperlink{_uklad_rownan_liniowych_8hh_a8466044dc69ceaec3b324caeeb95cb2d}{operator$>$$>$} (istream \&Strm, \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$ \&UklRown)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $>$$>$ sluzy do wczytywania calego wyrazenia (tj macierzy wspolczynnikow oraz wektora wyrazow wolnych podanych przez uzytkownika). \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\ostream \& \hyperlink{_uklad_rownan_liniowych_8hh_aeedb2b3cdaffd4a69b18541d24d94dd1}{operator$<$$<$} (ostream \&Strm, const \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$ \&UklRown)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $<$$<$ sluzy do wypisywania na strumien wyjsciowy calego wyrazenia skladajacego sie z liczb znajdujacych sie w pamieci. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w pliku \hyperlink{_uklad_rownan_liniowych_8hh_source}{UkladRownanLiniowych.hh}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{_uklad_rownan_liniowych_8hh_aeedb2b3cdaffd4a69b18541d24d94dd1}{
+\index{UkladRownanLiniowych.hh@{UkladRownanLiniowych.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!UkladRownanLiniowych.hh@{UkladRownanLiniowych.hh}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{ Strm, }
+\item[{const {\bf UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$ \&}]{ UklRown}
+\end{DoxyParamCaption}
+)}}
+\label{_uklad_rownan_liniowych_8hh_aeedb2b3cdaffd4a69b18541d24d94dd1}
+\begin{DoxyReturn}{Zwraca}
+referencja do strumienia wyjsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wyjsciowego \item[\mbox{\tt[in,out]} {\em \&UklRown}]-\/ referencja do szablonu klasy typu \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych} \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+Wymagane uprzednie wczytanie liczb w ilosci 
+\end{DoxyPrecond}
+
+
+Definicja w linii 69 pliku UkladRownanLiniowych.hh.
+
+\hypertarget{_uklad_rownan_liniowych_8hh_a8466044dc69ceaec3b324caeeb95cb2d}{
+\index{UkladRownanLiniowych.hh@{UkladRownanLiniowych.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!UkladRownanLiniowych.hh@{UkladRownanLiniowych.hh}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{ Strm, }
+\item[{{\bf UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$ \&}]{ UklRown}
+\end{DoxyParamCaption}
+)}}
+\label{_uklad_rownan_liniowych_8hh_a8466044dc69ceaec3b324caeeb95cb2d}
+\begin{DoxyReturn}{Zwraca}
+referencja do strumienia wejsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wejsciowego \item[\mbox{\tt[in,out]} {\em \&UklRown}]-\/ referencja do szablonu klasy typu \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych} \end{DoxyParams}
+
+
+Definicja w linii 54 pliku UkladRownanLiniowych.hh.
+

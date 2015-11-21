@@ -1,0 +1,32 @@
+/*
+   2Ow1L - Bardzo Prosty Przykład Dwóch Rodzai Obiektów w Jednej Liście
+
+   Aplikacja jest przykładem realizacji dwóch list
+   bez korzystania z mechanizmów metod wirtualnych.
+   Prowadzi to do dość siermiężnej konstrukcji,
+   którą można zobaczyć w kodzie.
+
+
+   Najważniejsze cechy
+
+   Lista dwóch rodzai figur ukrywa ukrywa wewnętrzną strukturę
+   listy. Publiczny interfejs klasy udostępnia metody, które
+   dodają kwadraty lub koła.
+   Konstrukcja wspólnej listy bazuje na fakcie, że zarówno
+   obiekty klasy Kwadrat, jak też obiekty klasy Kolo, są
+   obiektami klas, które mają wspólną klasę bazową FiguraGeometryczna.
+   Pozwala to utworzyć jedną listę wskaźników na obiekty klasy
+   FiguraGeometryczna i wykorzystać mechanizm niejawnego 
+   rzutowania w górę.
+
+   Konstrukcja destruktora
+
+   Należy zwrócić uwagę na konstrukcję destruktora klasy
+   ListaFigurGeometrycznych. Aby destrukcja poszczególnych
+   obiektów listy przebiegała poprawnie, należy dostać się
+   do wskaźników na rzeczywiste obiekty, w których jest
+   zawarty dany podobiekt klasy FiguraGeometryczna.
+   W przypadku wykorzystania mechanizmów polimorfizmu
+   zapis destruktora można znacząco uprościć. 
+
+ */

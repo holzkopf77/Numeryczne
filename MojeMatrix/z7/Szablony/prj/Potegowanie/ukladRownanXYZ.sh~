@@ -1,0 +1,3 @@
+rozmiar=`./a.out`
+echo $rozmiar
+./uklad_rownan -t r -r "$rozmiar" < daneWyjscioweLotux.txt

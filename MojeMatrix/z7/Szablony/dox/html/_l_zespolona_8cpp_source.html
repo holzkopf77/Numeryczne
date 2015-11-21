@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>UkladRownan: Plik źródłowy LZespolona.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&nbsp;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="dir_5acca7a69a50425ed15b726665a92491.html">prj</a>      </li>
+      <li><a class="el" href="dir_ea2c729999eb9d91c9fc78d011a1a046.html">src</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>LZespolona.cpp</h1>  </div>
+</div>
+<div class="contents">
+<a href="_l_zespolona_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;cmath&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;cstdlib&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="_l_zespolona_8hh.html" title="Klasa LZespolona sluzy do przechowywania liczby zespolonej w programie oraz do wykonywania operacji m...">LZespolona.hh</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="keyword">using namespace </span>std;
+<a name="l00018"></a><a class="code" href="class_l_zespolona.html#aa9f4cab72cd025614fc5e2facb515e6e">00018</a> <span class="keywordtype">double</span> <a class="code" href="class_l_zespolona.html#aa9f4cab72cd025614fc5e2facb515e6e" title="Funkcja zwraca modul liczby zespolonej.">LZespolona::Modul</a>()<span class="keyword"> const</span>
+<a name="l00019"></a>00019 <span class="keyword"></span>{
+<a name="l00020"></a>00020   <span class="keywordflow">return</span> sqrt(<a class="code" href="class_l_zespolona.html#a06ce2b4a22c1ca3f8d97e41b602f078e">Re</a>()*<a class="code" href="class_l_zespolona.html#a06ce2b4a22c1ca3f8d97e41b602f078e">Re</a>()+<a class="code" href="class_l_zespolona.html#ad4057ab72b1471f38df277781baa0752">Im</a>()*<a class="code" href="class_l_zespolona.html#ad4057ab72b1471f38df277781baa0752">Im</a>());
+<a name="l00021"></a>00021 }
+<a name="l00022"></a>00022 
+<a name="l00029"></a><a class="code" href="class_l_zespolona.html#aa744e58a7aede6f7318d4f9d3d9b650d">00029</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="class_l_zespolona.html#aa744e58a7aede6f7318d4f9d3d9b650d" title="Funkcja operatorowa dodaje liczby zespolone.">LZespolona::operator+</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a>&amp; Q)<span class="keyword">const</span>
+<a name="l00030"></a>00030 <span class="keyword"></span>{
+<a name="l00031"></a>00031   <a class="code" href="class_l_zespolona.html">LZespolona</a> Z;
+<a name="l00032"></a>00032   Z[0]=Q[0]+<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>;
+<a name="l00033"></a>00033   Z[1]=Q[1]+<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>;
+<a name="l00034"></a>00034   <span class="keywordflow">return</span> Z;
+<a name="l00035"></a>00035 }
+<a name="l00036"></a>00036 
+<a name="l00042"></a><a class="code" href="class_l_zespolona.html#a35b451d6d3bd0b0782bb1a73517e7f04">00042</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="class_l_zespolona.html#a35b451d6d3bd0b0782bb1a73517e7f04" title="Funkcja operatorowa liczbe zespolona na przeciwna.">LZespolona::operator-</a>()<span class="keyword">const</span>
+<a name="l00043"></a>00043 <span class="keyword"></span>{
+<a name="l00044"></a>00044   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q;
+<a name="l00045"></a>00045   Q[0]=-<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>;
+<a name="l00046"></a>00046   Q[1]=-<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>;
+<a name="l00047"></a>00047   <span class="keywordflow">return</span> Q;
+<a name="l00048"></a>00048 }
+<a name="l00049"></a>00049 
+<a name="l00056"></a><a class="code" href="class_l_zespolona.html#ad3875fdfa4e365029281d3dd0588dd68">00056</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="class_l_zespolona.html#a35b451d6d3bd0b0782bb1a73517e7f04" title="Funkcja operatorowa liczbe zespolona na przeciwna.">LZespolona::operator-</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a>&amp; B)<span class="keyword">const</span>
+<a name="l00057"></a>00057 <span class="keyword"></span>{
+<a name="l00058"></a>00058   <a class="code" href="class_l_zespolona.html">LZespolona</a> Z;
+<a name="l00059"></a>00059   Z[0]=<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>-B[0];
+<a name="l00060"></a>00060   Z[1]=<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>-B[1];
+<a name="l00061"></a>00061   <span class="keywordflow">return</span> Z;
+<a name="l00062"></a>00062 }
+<a name="l00063"></a>00063 
+<a name="l00070"></a><a class="code" href="class_l_zespolona.html#a778727af986d4b8cddcbd089c6083644">00070</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="class_l_zespolona.html#a778727af986d4b8cddcbd089c6083644" title="Funkcja operatorowa mnozy liczby zespolone.">LZespolona::operator*</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a>&amp; Q)<span class="keyword">const</span>
+<a name="l00071"></a>00071 <span class="keyword"></span>{
+<a name="l00072"></a>00072   <a class="code" href="class_l_zespolona.html">LZespolona</a> Z;
+<a name="l00073"></a>00073   Z[0]=<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>*Q[0]-(<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>*Q[1]);
+<a name="l00074"></a>00074   Z[1]=<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>*Q[0]+<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>*Q[1];
+<a name="l00075"></a>00075   <span class="keywordflow">return</span> Z;
+<a name="l00076"></a>00076 }
+<a name="l00077"></a>00077 
+<a name="l00085"></a><a class="code" href="class_l_zespolona.html#aea67f672eb082a069c394f2aa832c65e">00085</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="class_l_zespolona.html#aea67f672eb082a069c394f2aa832c65e" title="Funkcja operatorowa sluzy do dzielenia liczby zespolonej przez zespolona.">LZespolona::operator/</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a>&amp; Q)<span class="keyword">const</span>
+<a name="l00086"></a>00086 <span class="keyword"></span>{
+<a name="l00087"></a>00087   <a class="code" href="class_l_zespolona.html">LZespolona</a> Z;
+<a name="l00088"></a>00088   Z[0]=(<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>*Q[0]+<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>*Q[1])/(Q[0]*Q[0]+Q[1]*Q[1]);
+<a name="l00089"></a>00089   Z[1]=(<a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>*Q[0]-<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>*Q[1])/(Q[0]*Q[0]+Q[1]*Q[1]);
+<a name="l00090"></a>00090   <span class="keywordflow">return</span> Z;
+<a name="l00091"></a>00091 }
+<a name="l00092"></a>00092 
+<a name="l00100"></a><a class="code" href="class_l_zespolona.html#a4499e73b6e5b883df008be2694698f46">00100</a> <span class="keywordtype">int</span> <a class="code" href="class_l_zespolona.html#a4499e73b6e5b883df008be2694698f46" title="Funkcja operatorowa porownuje czesci rzeczywiste oraz czesci urojone liczby zespolonej.">LZespolona::operator==</a>(<a class="code" href="class_l_zespolona.html">LZespolona</a> <span class="keyword">const</span> &amp;W)
+<a name="l00101"></a>00101 {
+<a name="l00102"></a>00102   <span class="keywordflow">return</span> (<a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>==W[0] &amp;&amp; <a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>==W[1]);
+<a name="l00103"></a>00103 }
+<a name="l00104"></a>00104 
+<a name="l00113"></a><a class="code" href="_l_zespolona_8cpp.html#a48f8e9c2b37ad5b3b8b964c25346b930">00113</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_l_zespolona_8cpp.html#a48f8e9c2b37ad5b3b8b964c25346b930" title="Funkcja operatorowa dodaje liczbe rzeczywista do liczby zespolonej.">operator+</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba,<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z)
+<a name="l00114"></a>00114 {
+<a name="l00115"></a>00115   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00116"></a>00116   Q[0]+=Liczba;
+<a name="l00117"></a>00117   <span class="keywordflow">return</span> Q;
+<a name="l00118"></a>00118 }
+<a name="l00119"></a>00119 
+<a name="l00128"></a><a class="code" href="_l_zespolona_8cpp.html#aef47f3e429efa18ade4555f77df27014">00128</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_l_zespolona_8cpp.html#a48f8e9c2b37ad5b3b8b964c25346b930" title="Funkcja operatorowa dodaje liczbe rzeczywista do liczby zespolonej.">operator+</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z,<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba)
+<a name="l00129"></a>00129 {
+<a name="l00130"></a>00130   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00131"></a>00131   Q[0]+=Liczba;
+<a name="l00132"></a>00132   <span class="keywordflow">return</span> Q;
+<a name="l00133"></a>00133 }
+<a name="l00134"></a>00134 
+<a name="l00143"></a><a class="code" href="_l_zespolona_8cpp.html#afd6ac9993dc5c5279a990b98d607b2d4">00143</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_l_zespolona_8cpp.html#afd6ac9993dc5c5279a990b98d607b2d4" title="Funkcja operatorowa odejmuje liczbe rzeczywista od liczby zespolonej.">operator-</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z,<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba)
+<a name="l00144"></a>00144 {
+<a name="l00145"></a>00145   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00146"></a>00146   Q[0]-=Liczba;
+<a name="l00147"></a>00147   <span class="keywordflow">return</span> Q;
+<a name="l00148"></a>00148 }
+<a name="l00149"></a>00149 
+<a name="l00158"></a><a class="code" href="_l_zespolona_8cpp.html#a896efd2b35c96235e487819ad646aebb">00158</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_wektor_8hh.html#a7c5d0bef7270148f7dcc5629c0728deb" title="Szablon funkcji operatorowej * sluzy do mnozenia liczby przez wektor.">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba,<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z)
+<a name="l00159"></a>00159 {
+<a name="l00160"></a>00160   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00161"></a>00161   Q[0]*=Liczba;
+<a name="l00162"></a>00162   Q[1]*=Liczba;
+<a name="l00163"></a>00163   <span class="keywordflow">return</span> Q;
+<a name="l00164"></a>00164 }
+<a name="l00165"></a>00165 
+<a name="l00174"></a><a class="code" href="_l_zespolona_8cpp.html#a7cc8baeda5b16a42f0a193d3fbaf0a64">00174</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_wektor_8hh.html#a7c5d0bef7270148f7dcc5629c0728deb" title="Szablon funkcji operatorowej * sluzy do mnozenia liczby przez wektor.">operator*</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z,<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba)
+<a name="l00175"></a>00175 {
+<a name="l00176"></a>00176   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00177"></a>00177   Q[0]*=Liczba;
+<a name="l00178"></a>00178   Q[1]*=Liczba;
+<a name="l00179"></a>00179   <span class="keywordflow">return</span> Q;
+<a name="l00180"></a>00180 }
+<a name="l00181"></a>00181 
+<a name="l00190"></a><a class="code" href="_l_zespolona_8cpp.html#adde8e8baef5452a13cc50c8c72e8d397">00190</a> <a class="code" href="class_l_zespolona.html">LZespolona</a> <a class="code" href="_l_zespolona_8cpp.html#adde8e8baef5452a13cc50c8c72e8d397" title="Funkcja operatorowa dzieli liczbe zespolona przez liczbe zespolona.">operator/</a>(<span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z,<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba)
+<a name="l00191"></a>00191 {
+<a name="l00192"></a>00192   <a class="code" href="class_l_zespolona.html">LZespolona</a> Q=Z;
+<a name="l00193"></a>00193   Q[0]/=Liczba;
+<a name="l00194"></a>00194   Q[1]/=Liczba;
+<a name="l00195"></a>00195   <span class="keywordflow">return</span> Q;
+<a name="l00196"></a>00196 }
+<a name="l00197"></a>00197 
+<a name="l00205"></a><a class="code" href="_l_zespolona_8cpp.html#ab7b96610b555631a2b10bd9c097abb55">00205</a> std::ostream&amp; <a class="code" href="_l_zespolona_8hh.html#ab7b96610b555631a2b10bd9c097abb55" title="Funkcja operatorowa pozwala na wypisanie liczby zespolonej.">operator &lt;&lt;</a>(std::ostream&amp; Strm, <span class="keyword">const</span> <a class="code" href="class_l_zespolona.html">LZespolona</a>&amp; WyswLiczba)
+<a name="l00206"></a>00206 {
+<a name="l00207"></a>00207   Strm&lt;&lt;<span class="stringliteral">&quot;{&quot;</span>&lt;&lt;WyswLiczba[0]&lt;&lt;std::showpos&lt;&lt;WyswLiczba[1]&lt;&lt;<span class="stringliteral">&quot;i}&quot;</span>;
+<a name="l00208"></a>00208   <span class="keywordflow">return</span> Strm;
+<a name="l00209"></a>00209 }
+<a name="l00216"></a><a class="code" href="class_l_zespolona.html#aad1062d600b75272470a7b6e0b627000">00216</a> <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; <a class="code" href="class_l_zespolona.html#aad1062d600b75272470a7b6e0b627000" title="Funkcja operatorowa = pozwala przypisac liczbe rzeczywista liczbie zespolonej.">LZespolona::operator=</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;a)
+<a name="l00217"></a>00217 {
+<a name="l00218"></a>00218   <a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>=a;
+<a name="l00219"></a>00219   <a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>=0;
+<a name="l00220"></a>00220   <span class="keywordflow">return</span> a;
+<a name="l00221"></a>00221 }
+<a name="l00222"></a>00222 
+<a name="l00230"></a><a class="code" href="class_l_zespolona.html#a1956d27ba5a7c68dd4e8adba81db23da">00230</a> <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="class_l_zespolona.html#aad1062d600b75272470a7b6e0b627000" title="Funkcja operatorowa = pozwala przypisac liczbe rzeczywista liczbie zespolonej.">LZespolona::operator=</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;a)
+<a name="l00231"></a>00231 {
+<a name="l00232"></a>00232   <a class="code" href="class_l_zespolona.html#a2c047555071a543fbe6a25e7ccb949c8">_re</a>=(double)a;
+<a name="l00233"></a>00233   <a class="code" href="class_l_zespolona.html#af9a4d283c2939ea8b427e1eb0358cb2c">_im</a>=0;
+<a name="l00234"></a>00234   <span class="keywordflow">return</span> a;
+<a name="l00235"></a>00235 }
+<a name="l00236"></a>00236 
+<a name="l00245"></a><a class="code" href="_l_zespolona_8cpp.html#a36c8f5a74b4b81f5c1f9142ad5a958b9">00245</a> std::istream&amp; <a class="code" href="_l_zespolona_8hh.html#a36c8f5a74b4b81f5c1f9142ad5a958b9" title="Funkcja operatorowa pozwala na wczytanie liczby zespolonej.">operator &gt;&gt; </a>(std::istream &amp;Strm, <a class="code" href="class_l_zespolona.html">LZespolona</a> &amp;Z)
+<a name="l00246"></a>00246 {
+<a name="l00247"></a>00247   <span class="keywordtype">char</span> znak;
+<a name="l00248"></a>00248   Strm&gt;&gt;znak;
+<a name="l00249"></a>00249   <span class="keywordflow">if</span>(znak!=<span class="charliteral">&#39;{&#39;</span>){
+<a name="l00250"></a>00250     Strm.setstate(ios::failbit);
+<a name="l00251"></a>00251     cerr&lt;&lt;<span class="stringliteral">&quot;Brak klamry otwierajacej&quot;</span>&lt;&lt;endl;
+<a name="l00252"></a>00252     exit(0);
+<a name="l00253"></a>00253   }
+<a name="l00254"></a>00254   Strm&gt;&gt;Z[0];
+<a name="l00255"></a>00255   <span class="keywordflow">if</span>(Strm.fail()){
+<a name="l00256"></a>00256     Strm.setstate(ios::failbit);
+<a name="l00257"></a>00257     cerr&lt;&lt;<span class="stringliteral">&quot;Niepoprawna czesc rzeczywista liczby zespolonej&quot;</span>&lt;&lt;endl;
+<a name="l00258"></a>00258     exit(0);
+<a name="l00259"></a>00259   }
+<a name="l00260"></a>00260   Strm&gt;&gt;std::showpos&gt;&gt;Z[1];
+<a name="l00261"></a>00261   <span class="keywordflow">if</span>(Strm.fail()){
+<a name="l00262"></a>00262     Strm.setstate(ios::failbit);
+<a name="l00263"></a>00263     cerr&lt;&lt;<span class="stringliteral">&quot;Niepoprawna czesc urojona liczby zespolonej&quot;</span>&lt;&lt;endl;
+<a name="l00264"></a>00264     exit(0);
+<a name="l00265"></a>00265   }
+<a name="l00266"></a>00266   Strm&gt;&gt;znak;
+<a name="l00267"></a>00267   <span class="keywordflow">if</span>(znak!=<span class="charliteral">&#39;i&#39;</span>){
+<a name="l00268"></a>00268     Strm.setstate(ios::failbit);
+<a name="l00269"></a>00269     cerr&lt;&lt;<span class="stringliteral">&quot;Brak litery i oznaczacej liczbe zespolona&quot;</span>&lt;&lt;endl;
+<a name="l00270"></a>00270     exit(0);
+<a name="l00271"></a>00271   }
+<a name="l00272"></a>00272   Strm&gt;&gt;znak;
+<a name="l00273"></a>00273   <span class="keywordflow">if</span>(znak!=<span class="charliteral">&#39;}&#39;</span>){
+<a name="l00274"></a>00274     Strm.setstate(ios::failbit);
+<a name="l00275"></a>00275     cerr&lt;&lt;<span class="stringliteral">&quot;Brak klamry zamykajacej&quot;</span>&lt;&lt;endl;
+<a name="l00276"></a>00276     exit(0);
+<a name="l00277"></a>00277   }
+<a name="l00278"></a>00278   
+<a name="l00279"></a>00279   
+<a name="l00280"></a>00280   <span class="keywordflow">return</span> Strm;
+<a name="l00281"></a>00281   }
+</pre></div></div>
+</div>
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu May 15 2014 17:10:37 dla UkladRownan programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

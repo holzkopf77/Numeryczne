@@ -1,0 +1,10 @@
+/*!
+	\mainpage UkladRownanLinowych - Program sluzy do rozwiazywania
+	ukladu rownan liniowych. 
+	
+	\author Filip Chodorowski	
+	
+	Rozwiazuje rownania rzeczywiste i zespolone
+	od 2-5. Poza tym pokazuje jaki jest rzad bledu.
+
+ */

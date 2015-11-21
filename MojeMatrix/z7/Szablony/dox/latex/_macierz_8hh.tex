@@ -1,0 +1,91 @@
+\hypertarget{_macierz_8hh}{
+\section{Dokumentacja pliku Macierz.hh}
+\label{_macierz_8hh}\index{Macierz.hh@{Macierz.hh}}
+}
+
+
+Szablon Klasy \hyperlink{class_macierz}{Macierz} modeluje w programie macierz. \hyperlink{class_macierz}{Macierz} jest przechowywana w postaci Wektorow. Ich ilosc zalezy od rozmiaru Macierzy. Sklada sie z metody do obliczania wyznacznika i operatora indeksujacego,by bezposrednio odwolywac sie do macierzy. Sklada sie rowniez z funkcji arytmetycznych na macierzach.  
+
+
+{\ttfamily \#include \char`\"{}Wektor.hh\char`\"{}}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include \char`\"{}LZespolona.hh\char`\"{}}\par
+Wykres zależności załączania dla Macierz.hh:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_macierz_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{_macierz_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_macierz}{Macierz$<$ Typ, ROZMIAR $>$}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\istream \& \hyperlink{_macierz_8hh_a1c08e6a33bb216fa9634ec5dc037d2fa}{operator$>$$>$} (istream \&Strm, \hyperlink{class_macierz}{Macierz}$<$ Typ, ROZMIAR $>$ \&Mac)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $>$$>$ sluzy do wczytywania macierzy skladajacej sie z wektorow podanych przez uzytkownika. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\ostream \& \hyperlink{_macierz_8hh_a9e0ef06d4cb05883781442e8c612d2c1}{operator$<$$<$} (ostream \&Strm, const \hyperlink{class_macierz}{Macierz}$<$ Typ, ROZMIAR $>$ \&Mac)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $<$$<$ sluzy do zapisywania na strumien wyjsciowy macierzy sladajacej sie z liczb znajdujacych sie w pamieci. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w pliku \hyperlink{_macierz_8hh_source}{Macierz.hh}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{_macierz_8hh_a9e0ef06d4cb05883781442e8c612d2c1}{
+\index{Macierz.hh@{Macierz.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Macierz.hh@{Macierz.hh}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{ Strm, }
+\item[{const {\bf Macierz}$<$ Typ, ROZMIAR $>$ \&}]{ Mac}
+\end{DoxyParamCaption}
+)}}
+\label{_macierz_8hh_a9e0ef06d4cb05883781442e8c612d2c1}
+\begin{DoxyReturn}{Zwraca}
+Zwraca referencje do strumienia wyjsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wyjsciowego \item[\mbox{\tt[in,out]} {\em \&Mac}]-\/ referencja do szablonu klasy typu \hyperlink{class_macierz}{Macierz} \end{DoxyParams}
+
+
+Definicja w linii 100 pliku Macierz.hh.
+
+\hypertarget{_macierz_8hh_a1c08e6a33bb216fa9634ec5dc037d2fa}{
+\index{Macierz.hh@{Macierz.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Macierz.hh@{Macierz.hh}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{ Strm, }
+\item[{{\bf Macierz}$<$ Typ, ROZMIAR $>$ \&}]{ Mac}
+\end{DoxyParamCaption}
+)}}
+\label{_macierz_8hh_a1c08e6a33bb216fa9634ec5dc037d2fa}
+\begin{DoxyReturn}{Zwraca}
+referencja do strumienia wejsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wejsciowego \item[\mbox{\tt[in,out]} {\em \&Mac}]-\/ referencja do szablonu klasy typu \hyperlink{class_macierz}{Macierz} \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+referencja do strumienia wejsciowego 
+\end{DoxyReturn}
+
+
+Definicja w linii 85 pliku Macierz.hh.
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>UkladRownan: Plik źródłowy Wektor.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&nbsp;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="dir_5acca7a69a50425ed15b726665a92491.html">prj</a>      </li>
+      <li><a class="el" href="dir_da40416fce0315f7465b5a29481a9543.html">inc</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>Wektor.hh</h1>  </div>
+</div>
+<div class="contents">
+<a href="_wektor_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef WEKTOR_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define WEKTOR_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iomanip&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="_l_zespolona_8hh.html" title="Klasa LZespolona sluzy do przechowywania liczby zespolonej w programie oraz do wykonywania operacji m...">LZespolona.hh</a>&quot;</span>
+<a name="l00007"></a>00007 
+<a name="l00013"></a>00013 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ, <span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00014"></a><a class="code" href="class_wektor.html">00014</a> <span class="keyword">class </span><a class="code" href="class_wektor.html">Wektor</a> {
+<a name="l00015"></a><a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">00015</a>   Typ <a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[ROZMIAR];
+<a name="l00016"></a>00016     
+<a name="l00017"></a>00017   <span class="keyword">public</span>:
+<a name="l00026"></a><a class="code" href="class_wektor.html#a0da276143fa53c457a7d1c836fe0fee6">00026</a>   Typ <a class="code" href="class_wektor.html#a0da276143fa53c457a7d1c836fe0fee6" title="Przeciazenia indeksow dla wektora Funkcja operatorowa [] sluzy do indeksowania klasy Wektor...">operator[]</a>(<span class="keywordtype">int</span> Ind)<span class="keyword">const </span>{<span class="keywordflow">return</span> <a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[Ind];}
+<a name="l00035"></a><a class="code" href="class_wektor.html#ab1cf35ef42f4d254639df879b86560b5">00035</a>   Typ&amp; <a class="code" href="class_wektor.html#ab1cf35ef42f4d254639df879b86560b5" title="Przeciazenia indeksow dla wektora Funkcja operatorowa [] sluzy do indeksowania klasy Wektor...">operator[]</a>(<span class="keywordtype">int</span> Ind)      {<span class="keywordflow">return</span> <a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[Ind];}
+<a name="l00036"></a>00036   
+<a name="l00040"></a>00040 <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41" title="Szablon funkcji operatorowej * sluzy do mnozenia wektora przez liczbe.">operator*</a>(<span class="keywordtype">double</span> liczba)<span class="keyword">const</span>;
+<a name="l00044"></a>00044   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#a3dac94ec81b3bdbcd64565c3ae75230f" title="Szablon funkcji operatorowej + sluzy do dodawania dwoch wektorow.">operator+</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q)<span class="keyword">const</span>;
+<a name="l00048"></a>00048   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#a369fcd56f09fe24c09582ab65f737cbf" title="Szablon Funkcji operatorowej - sluzy do odejmowania dwoch wektorow.">operator-</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q)<span class="keyword">const</span>;
+<a name="l00052"></a>00052 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T,<span class="keywordtype">int</span> rozmiarek&gt;
+<a name="l00053"></a>00053 <span class="keyword">friend</span> <a class="code" href="class_wektor.html">Wektor&lt;T,rozmiarek&gt;</a> <a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41" title="Szablon funkcji operatorowej * sluzy do mnozenia wektora przez liczbe.">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba,<span class="keyword">const</span> <a class="code" href="class_wektor.html">Wektor&lt;T,rozmiarek&gt;</a> <a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>);
+<a name="l00057"></a>00057   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#aa0e6e381f2099b4b6c8a0131e2c2f6e4" title="Szablon funkcji operatorowej / sluzy do dzielenia wektora przez liczbe.">operator/</a>(<span class="keywordtype">double</span> Liczba)<span class="keyword">const</span>;
+<a name="l00061"></a>00061   Typ <a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41" title="Szablon funkcji operatorowej * sluzy do mnozenia wektora przez liczbe.">operator*</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q)<span class="keyword">const</span>;
+<a name="l00062"></a>00062   <span class="comment">/***********************************************************/</span>
+<a name="l00063"></a>00063 };
+<a name="l00065"></a>00065 
+<a name="l00074"></a>00074 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00075"></a><a class="code" href="_wektor_8hh.html#a819aa25942acc1bc4adcbc6e63081d39">00075</a> std::istream&amp; <a class="code" href="_l_zespolona_8hh.html#a36c8f5a74b4b81f5c1f9142ad5a958b9" title="Funkcja operatorowa pozwala na wczytanie liczby zespolonej.">operator&gt;&gt;</a>(std::istream &amp;Strm, <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> &amp;Wek)
+<a name="l00076"></a>00076 {
+<a name="l00077"></a>00077   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++)Strm&gt;&gt;Wek[i];
+<a name="l00078"></a>00078   <span class="keywordflow">return</span> Strm;
+<a name="l00079"></a>00079 }
+<a name="l00080"></a>00080 
+<a name="l00088"></a>00088 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00089"></a><a class="code" href="_wektor_8hh.html#ad9cda9bedc161ef0997004ec02402850">00089</a> std::ostream&amp; operator&lt;&lt;(std::ostream &amp;Strm, const Wektor&lt;Typ,ROZMIAR&gt; &amp;Wek)
+<a name="l00090"></a>00090 {
+<a name="l00091"></a>00091   Strm&lt;&lt;std::setw(6)&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;
+<a name="l00092"></a>00092   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++)Strm&lt;&lt;std::setw(5)&lt;&lt;Wek[i]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>;
+<a name="l00093"></a>00093   Strm&lt;&lt;std::endl;
+<a name="l00094"></a>00094   <span class="keywordflow">return</span> Strm;
+<a name="l00095"></a>00095 }
+<a name="l00096"></a>00096 
+<a name="l00104"></a>00104 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00105"></a><a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41">00105</a> <a class="code" href="class_wektor.html">Wektor&lt;Typ, ROZMIAR&gt;</a><a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41" title="Szablon funkcji operatorowej * sluzy do mnozenia wektora przez liczbe.">Wektor&lt;Typ, ROZMIAR&gt;::operator*</a>(<span class="keywordtype">double</span> Liczba)<span class="keyword">const</span>
+<a name="l00106"></a>00106 <span class="keyword"></span>{
+<a name="l00107"></a>00107   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q;
+<a name="l00108"></a>00108   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++) Q[i]=Q[i]*<a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[i]*Liczba;
+<a name="l00109"></a>00109   <span class="keywordflow">return</span> Q;
+<a name="l00110"></a>00110 }
+<a name="l00111"></a>00111 
+<a name="l00120"></a>00120 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00121"></a><a class="code" href="_wektor_8hh.html#a7c5d0bef7270148f7dcc5629c0728deb">00121</a> <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="_wektor_8hh.html#a7c5d0bef7270148f7dcc5629c0728deb" title="Szablon funkcji operatorowej * sluzy do mnozenia liczby przez wektor.">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> Liczba,<span class="keyword">const</span> <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> _V)
+<a name="l00122"></a>00122 {
+<a name="l00123"></a>00123   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q=_V;
+<a name="l00124"></a>00124   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i;i&lt;ROZMIAR;i++) Q[i]=Q[i]*Liczba;
+<a name="l00125"></a>00125   <span class="keywordflow">return</span> Q;
+<a name="l00126"></a>00126 }
+<a name="l00127"></a>00127 
+<a name="l00135"></a>00135 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00136"></a><a class="code" href="class_wektor.html#a4ef2829992c2337f21c78e36b3b08cb8">00136</a> Typ <a class="code" href="class_wektor.html#a69adce9a9015aa4ccca6320ca93a7a41" title="Szablon funkcji operatorowej * sluzy do mnozenia wektora przez liczbe.">Wektor&lt;Typ, ROZMIAR&gt;::operator*</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q)<span class="keyword">const</span>
+<a name="l00137"></a>00137 <span class="keyword"></span>{
+<a name="l00138"></a>00138   Typ wynik_skalaru;
+<a name="l00139"></a>00139   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++)
+<a name="l00140"></a>00140     wynik_skalaru=wynik_skalaru+<a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[i]*Q[i];
+<a name="l00141"></a>00141   <span class="keywordflow">return</span> wynik_skalaru;
+<a name="l00142"></a>00142 }
+<a name="l00143"></a>00143 
+<a name="l00151"></a>00151 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00152"></a><a class="code" href="class_wektor.html#a3dac94ec81b3bdbcd64565c3ae75230f">00152</a> <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#a3dac94ec81b3bdbcd64565c3ae75230f" title="Szablon funkcji operatorowej + sluzy do dodawania dwoch wektorow.">Wektor&lt;Typ, ROZMIAR&gt;::operator+</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Q)<span class="keyword">const</span>
+<a name="l00153"></a>00153 <span class="keyword"></span>{
+<a name="l00154"></a>00154   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Z;
+<a name="l00155"></a>00155   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++)Z[i]=<a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[i]+Q[i];
+<a name="l00156"></a>00156   <span class="keywordflow">return</span> Z;
+<a name="l00157"></a>00157 }
+<a name="l00158"></a>00158 
+<a name="l00166"></a>00166 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00167"></a><a class="code" href="class_wektor.html#a369fcd56f09fe24c09582ab65f737cbf">00167</a> <a class="code" href="class_wektor.html">Wektor&lt;Typ, ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#a369fcd56f09fe24c09582ab65f737cbf" title="Szablon Funkcji operatorowej - sluzy do odejmowania dwoch wektorow.">Wektor&lt;Typ, ROZMIAR&gt;::operator-</a>(<a class="code" href="class_wektor.html">Wektor&lt;Typ, ROZMIAR&gt;</a> Q)<span class="keyword">const</span>
+<a name="l00168"></a>00168 <span class="keyword"></span>{
+<a name="l00169"></a>00169   <a class="code" href="class_wektor.html">Wektor</a> Z;
+<a name="l00170"></a>00170   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++) Z[i]=<a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[i]-Q[i];
+<a name="l00171"></a>00171   <span class="keywordflow">return</span> Z;
+<a name="l00172"></a>00172 }
+<a name="l00173"></a>00173 
+<a name="l00181"></a>00181 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ,<span class="keywordtype">int</span> ROZMIAR&gt;
+<a name="l00182"></a><a class="code" href="class_wektor.html#aa0e6e381f2099b4b6c8a0131e2c2f6e4">00182</a> <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> <a class="code" href="class_wektor.html#aa0e6e381f2099b4b6c8a0131e2c2f6e4" title="Szablon funkcji operatorowej / sluzy do dzielenia wektora przez liczbe.">Wektor&lt;Typ, ROZMIAR&gt;::operator/</a>(<span class="keywordtype">double</span> Liczba)<span class="keyword">const</span>
+<a name="l00183"></a>00183 <span class="keyword"></span>{
+<a name="l00184"></a>00184   <a class="code" href="class_wektor.html">Wektor&lt;Typ,ROZMIAR&gt;</a> Z;
+<a name="l00185"></a>00185   <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;ROZMIAR;i++)Z[i]=<a class="code" href="class_wektor.html#a0d996feb5ea3412a985abaac93060e4b">_V</a>[i]/Liczba;
+<a name="l00186"></a>00186   <span class="keywordflow">return</span> Z;
+<a name="l00187"></a>00187 }
+<a name="l00188"></a>00188 
+<a name="l00189"></a>00189 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu May 15 2014 17:10:37 dla UkladRownan programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

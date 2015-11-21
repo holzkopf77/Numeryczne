@@ -1,0 +1,237 @@
+\hypertarget{class_macierz}{
+\section{Dokumentacja szablonu klasy Macierz$<$ Typ, ROZMIAR $>$}
+\label{class_macierz}\index{Macierz@{Macierz}}
+}
+
+
+{\ttfamily \#include $<$Macierz.hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \& \hyperlink{class_macierz_aaa9522b86fd7a63646fd07890e45dd11}{operator\mbox{[}$\,$\mbox{]}} (int Wie)
+\begin{DoxyCompactList}\small\item\em Przeciazenia indeksow dla macierzy. Funkcja operatorowa \mbox{[}\mbox{]} sluzy do indeksowania klasy \hyperlink{class_macierz}{Macierz},by moc odnosic sie w bezposredni sposob do tablicy typu \hyperlink{class_wektor}{Wektor} tej klasy. \item\end{DoxyCompactList}\item 
+const \hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \& \hyperlink{class_macierz_abb153212ae62cdf841f96320f891cfb2}{operator\mbox{[}$\,$\mbox{]}} (int Wie) const 
+\begin{DoxyCompactList}\small\item\em Przeciazenia indeksow dla macierzy. Funkcja operatorowa \mbox{[}\mbox{]} sluzy do indeksowania klasy \hyperlink{class_macierz}{Macierz},by moc odnosic sie w bezposredni sposob do tablicy typu \hyperlink{class_wektor}{Wektor} tej klasy. \item\end{DoxyCompactList}\item 
+\hyperlink{class_macierz}{Macierz}$<$ Typ, ROZMIAR $>$ \hyperlink{class_macierz_ae8f58657a41da4c9c54c4f0ed85f554e}{operator$\ast$} (\hyperlink{class_macierz}{Macierz}$<$ Typ, ROZMIAR $>$ \&Mac2)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia macierzy przez macierz. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_macierz_ac60295eba85e578dc300b1c3f0431684}{operator$\ast$} (const \hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ Wek) const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia macierzy przez wektor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \& \hyperlink{class_macierz_ab94e869cad4bc457c5796e20d5c34348}{Transpozycja} ()
+\begin{DoxyCompactList}\small\item\em Szablon funkcji Transpozycja sluzy do Transponowania macierzy, czyli. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_macierz_a3d8e9e4fee3850b78b0caf5215b34893}{SortowanieWierszy} ()
+\begin{DoxyCompactList}\small\item\em Szablon funkcji SortowanieWierszy sluzy do zamiany wierszy w macierzy. \item\end{DoxyCompactList}\item 
+Typ \hyperlink{class_macierz_a57a50f518945cd9152a88f367cb23e9e}{ObliczWyznacznik} () const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji ObliczWyznacznik sluzy do obliczenia wyznacznika macierzy o zadanym rozmiarze. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_macierz_a2b7a2db3b700ad190ff592c470a8afb3}{\_\-Wiersz} \mbox{[}ROZMIAR\mbox{]}
+\begin{DoxyCompactList}\small\item\em Szablon macierzy skladajacej sie z wektorow. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ, int ROZMIAR$>$ class Macierz$<$ Typ, ROZMIAR $>$}
+
+
+
+Definicja w linii 18 pliku Macierz.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_macierz_a57a50f518945cd9152a88f367cb23e9e}{
+\index{Macierz@{Macierz}!ObliczWyznacznik@{ObliczWyznacznik}}
+\index{ObliczWyznacznik@{ObliczWyznacznik}!Macierz@{Macierz}}
+\subsubsection[{ObliczWyznacznik}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ Typ {\bf Macierz}$<$ Typ, ROZMIAR $>$::ObliczWyznacznik (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_macierz_a57a50f518945cd9152a88f367cb23e9e}
+Szablon funkcji ObliczWyznacznik sluzy do obliczenia wyznacznika macierzy o zadanym rozmiarze. Zwraca element typu bool Jej elementem jest referencja do macierzy.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawnie wczytana macierz 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+Zostaje obliczony wyznacznik 
+
+wartosc true gdy wyznacznik rozny od 0, false,gdy rowny 0. 
+\end{DoxyReturn}
+
+
+Definicja w linii 203 pliku Macierz.hh.
+
+
+
+Oto graf wywołań dla tej funkcji:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_macierz_a57a50f518945cd9152a88f367cb23e9e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_macierz_ac60295eba85e578dc300b1c3f0431684}{
+\index{Macierz@{Macierz}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Macierz@{Macierz}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf Macierz}$<$ Typ, ROZMIAR $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Wektor}$<$ Typ, ROZMIAR $>$}]{ Wek}
+\end{DoxyParamCaption}
+) const}}
+\label{class_macierz_ac60295eba85e578dc300b1c3f0431684}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Wek}]-\/ wektor \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie wektora i macierzy 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+mnozenie macierzy przez wektor, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 113 pliku Macierz.hh.
+
+\hypertarget{class_macierz_ae8f58657a41da4c9c54c4f0ed85f554e}{
+\index{Macierz@{Macierz}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Macierz@{Macierz}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Macierz}$<$ Typ, ROZMIAR $>$ {\bf Macierz}$<$ Typ, ROZMIAR $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Macierz}$<$ Typ, ROZMIAR $>$ \&}]{ Mac2}
+\end{DoxyParamCaption}
+)}}
+\label{class_macierz_ae8f58657a41da4c9c54c4f0ed85f554e}
+\begin{DoxyReturn}{Zwraca}
+element typu \hyperlink{class_macierz}{Macierz} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em \&Mac2}]-\/ szablon referencji do klasy typu \hyperlink{class_macierz}{Macierz} \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie macierzy 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+mnozenie macierzy przez macierz, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 149 pliku Macierz.hh.
+
+
+
+Oto graf wywołań dla tej funkcji:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_macierz_ae8f58657a41da4c9c54c4f0ed85f554e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_macierz_aaa9522b86fd7a63646fd07890e45dd11}{
+\index{Macierz@{Macierz}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Macierz@{Macierz}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ {\bf Wektor}$<$Typ,ROZMIAR$>$\& {\bf Macierz}$<$ Typ, ROZMIAR $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Wie}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_macierz_aaa9522b86fd7a63646fd07890e45dd11}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Wie}]-\/ numer wiersza macierzy \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawny argument(int) w indeksie 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+wynik,jako wartosc \hyperlink{class_wektor}{Wektor} zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 34 pliku Macierz.hh.
+
+\hypertarget{class_macierz_abb153212ae62cdf841f96320f891cfb2}{
+\index{Macierz@{Macierz}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Macierz@{Macierz}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ const {\bf Wektor}$<$Typ,ROZMIAR$>$\& {\bf Macierz}$<$ Typ, ROZMIAR $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Wie}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_macierz_abb153212ae62cdf841f96320f891cfb2}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Wie}]-\/ numer wiersza macierzy \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawny argument(int) w indeksie 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+wynik,jako wartosc \hyperlink{class_wektor}{Wektor} zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 44 pliku Macierz.hh.
+
+\hypertarget{class_macierz_a3d8e9e4fee3850b78b0caf5215b34893}{
+\index{Macierz@{Macierz}!SortowanieWierszy@{SortowanieWierszy}}
+\index{SortowanieWierszy@{SortowanieWierszy}!Macierz@{Macierz}}
+\subsubsection[{SortowanieWierszy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ double {\bf Macierz}$<$ Typ, ROZMIAR $>$::SortowanieWierszy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_macierz_a3d8e9e4fee3850b78b0caf5215b34893}
+Szablon funkcji SortowanieWierszy sluzy do zamiany wierszy w macierzy by na jej glownej przekatnej znajdowala sie liczba rozna od 0 Jako argument przyjmuje referencje do macierzy. Zwraca element typu double.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawnie wczytana macierz 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+wynik typu double jest rowny 1,gdy 2n wierszy zamienione, -\/1 gdy 2n+1 
+\end{DoxyReturn}
+
+
+Definicja w linii 171 pliku Macierz.hh.
+
+\hypertarget{class_macierz_ab94e869cad4bc457c5796e20d5c34348}{
+\index{Macierz@{Macierz}!Transpozycja@{Transpozycja}}
+\index{Transpozycja@{Transpozycja}!Macierz@{Macierz}}
+\subsubsection[{Transpozycja}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ \& {\bf Macierz}$<$ Typ, ROZMIAR $>$::Transpozycja (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_macierz_ab94e869cad4bc457c5796e20d5c34348}
+Szablon funkcji Transpozycja sluzy do Transponowania macierzy, czyli zamiany wierszy z kolumnami. Zwraca element typu o wektor o rozmiarze macierzy.Jej elementem jest referencja do macierzy.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawnie wczytana macierz 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+Wiersze i kolumny zostaja zamienione w macierzy 
+\end{DoxyReturn}
+
+
+Definicja w linii 129 pliku Macierz.hh.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_macierz_a2b7a2db3b700ad190ff592c470a8afb3}{
+\index{Macierz@{Macierz}!\_\-Wiersz@{\_\-Wiersz}}
+\index{\_\-Wiersz@{\_\-Wiersz}!Macierz@{Macierz}}
+\subsubsection[{\_\-Wiersz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ {\bf Wektor}$<$Typ,ROZMIAR$>$ {\bf Macierz}$<$ Typ, ROZMIAR $>$::{\bf \_\-Wiersz}\mbox{[}ROZMIAR\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_macierz_a2b7a2db3b700ad190ff592c470a8afb3}
+
+
+Definicja w linii 22 pliku Macierz.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_macierz_8hh}{Macierz.hh}\end{DoxyCompactItemize}

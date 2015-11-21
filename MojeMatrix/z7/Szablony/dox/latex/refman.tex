@@ -1,0 +1,90 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large UkladRownan \\[1ex]\large 0.1 }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.7.1}\\
+\vspace*{0.5cm}
+{\small Thu May 15 2014 17:10:37}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{UkladRownanLinowych -\/ Program sluzy do rozwiazywania}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{Diagram klas}
+\label{strona-diagramu-klas}
+\hypertarget{strona-diagramu-klas}{}
+\input{strona-diagramu-klas}
+\chapter{Struktura katalogów}
+\input{dirs}
+\chapter{Indeks klas}
+\input{annotated}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja katalogów}
+\input{dir_da40416fce0315f7465b5a29481a9543}
+\input{dir_5acca7a69a50425ed15b726665a92491}
+\input{dir_ea2c729999eb9d91c9fc78d011a1a046}
+\chapter{Dokumentacja klas}
+\input{class_l_zespolona}
+\input{class_macierz}
+\input{struct_parametry_wywolania}
+\input{class_uklad_rownan_liniowych}
+\input{class_wektor}
+\chapter{Dokumentacja plików}
+\input{_l_zespolona_8cpp}
+\input{_l_zespolona_8hh}
+\input{_macierz_8hh}
+\input{main_8cpp}
+\input{parametry_8cpp}
+\input{parametry_8hh}
+\input{strona-01-diagram-klas_8dox}
+\input{strona-glowna_8dox}
+\input{_uklad_rownan_liniowych_8hh}
+\input{_wektor_8hh}
+\printindex
+\end{document}

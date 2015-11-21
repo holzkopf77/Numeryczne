@@ -1,0 +1,14 @@
+x_1=[2;3;6];
+x_2=[1;4;8];
+x_3=[1;2;3];
+
+X=[x_1,x_2,x_3];
+n=3;
+t = 1:n;
+ti = 0:0.1:n;
+xi = interp1(t, X(1,:), ti, "spline"); 
+yi = interp1(t, X(2,:), ti, "spline"); 
+zi = interp1(t, X(3,:), ti, "spline"); 
+Xi = [xi; yi; zi];
+plot3(xi,yi,zi)
+

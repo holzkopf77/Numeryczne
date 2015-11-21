@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>UkladRownan: Dokumentacja pliku Wektor.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&nbsp;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="dir_5acca7a69a50425ed15b726665a92491.html">prj</a>      </li>
+      <li><a class="el" href="dir_da40416fce0315f7465b5a29481a9543.html">inc</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<h1>Dokumentacja pliku Wektor.hh</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Szablon Klasy wektor modeluje wektor w programie, przechowuje go jako 3elementowa tablice typu double Jej metody to operacje arytmetyczne na wektorach.  
+<a href="#_details">Więcej...</a></p>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_l_zespolona_8hh_source.html">LZespolona.hh</a>&quot;</code><br/>
+<div class="dynheader">
+Wykres zależności załączania dla Wektor.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="_wektor_8hh__incl.png" border="0" usemap="#_wektor_8hh" alt=""/></div>
+<map name="_wektor_8hh" id="_wektor_8hh">
+<area shape="rect" id="node7" href="_l_zespolona_8hh.html" title="Klasa LZespolona sluzy do przechowywania liczby zespolonej w programie oraz do wykonywania operacji m..." alt="" coords="203,83,320,112"/></map>
+</div>
+<div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="_wektor_8hh__dep__incl.png" border="0" usemap="#_wektor_8hhdep" alt=""/></div>
+<map name="_wektor_8hhdep" id="_wektor_8hhdep">
+<area shape="rect" id="node3" href="_macierz_8hh.html" title="Szablon Klasy Macierz modeluje w programie macierz. Macierz jest przechowywana w postaci Wektorow..." alt="" coords="152,83,243,112"/><area shape="rect" id="node7" href="main_8cpp.html" title="main.cpp" alt="" coords="189,237,269,267"/><area shape="rect" id="node5" href="_uklad_rownan_liniowych_8hh.html" title="Klasa UkladRownanLiniowych modeluje w programie Macierz wspolczynnikow rownania, wektor wyrazow wolny..." alt="" coords="5,160,192,189"/></map>
+</div>
+
+<p><a href="_wektor_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wektor.html">Wektor&lt; Typ, ROZMIAR &gt;</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename Typ , int ROZMIAR&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_wektor_8hh.html#a819aa25942acc1bc4adcbc6e63081d39">operator&gt;&gt;</a> (std::istream &amp;Strm, <a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt; &amp;Wek)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Szablon funkcji operatorowej &gt;&gt; sluzy do wczytywania wektora skladajacego sie z liczb podanych przez uzytkownika.  <a href="#a819aa25942acc1bc4adcbc6e63081d39"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename Typ , int ROZMIAR&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_wektor_8hh.html#ad9cda9bedc161ef0997004ec02402850">operator&lt;&lt;</a> (std::ostream &amp;Strm, const <a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt; &amp;Wek)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Szablon funkcji operatorowej &lt;&lt; sluzy do wypisywanie na strumien wejsciowy wektora sladajacego sie z liczb znajdujacych sie w pamieci.  <a href="#ad9cda9bedc161ef0997004ec02402850"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename Typ , int ROZMIAR&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_wektor_8hh.html#a7c5d0bef7270148f7dcc5629c0728deb">operator*</a> (const double Liczba, const <a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt; _V)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Szablon funkcji operatorowej * sluzy do mnozenia liczby przez wektor.  <a href="#a7c5d0bef7270148f7dcc5629c0728deb"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Opis szczegółowy</h2>
+
+<p>Definicja w pliku <a class="el" href="_wektor_8hh_source.html">Wektor.hh</a>.</p>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a7c5d0bef7270148f7dcc5629c0728deb"></a><!-- doxytag: member="Wektor.hh::operator*" ref="a7c5d0bef7270148f7dcc5629c0728deb" args="(const double Liczba, const Wektor&lt; Typ, ROZMIAR &gt; _V)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Typ , int ROZMIAR&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_wektor.html">Wektor</a>&lt;Typ,ROZMIAR&gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">const double&nbsp;</td>
+          <td class="paramname"> <em>Liczba</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt;&nbsp;</td>
+          <td class="paramname"> <em>_V</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>referencja <a class="el" href="class_wektor.html">Wektor</a> </dd></dl>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>Liczba</em>&nbsp;</td><td>- liczba rzeczywista </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>_V</em>&nbsp;</td><td>- wektor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="pre"><dt><b>Warunek wstępny:</b></dt><dd>poprawne wczytanie wektora i podanie liczby </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>mnozenie liczby przez wektor, wynik jako wartosc zwracana przez funkcje </dd></dl>
+
+<p>Definicja w linii <a class="el" href="_wektor_8hh_source.html#l00121">121</a> pliku <a class="el" href="_wektor_8hh_source.html">Wektor.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9cda9bedc161ef0997004ec02402850"></a><!-- doxytag: member="Wektor.hh::operator&lt;&lt;" ref="ad9cda9bedc161ef0997004ec02402850" args="(std::ostream &amp;Strm, const Wektor&lt; Typ, ROZMIAR &gt; &amp;Wek)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Typ , int ROZMIAR&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>Strm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>Wek</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>referencja do strumienia wejsciowego </dd></dl>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>&amp;Strm</em>&nbsp;</td><td>- referencja do strumienia wejsciowego </td></tr>
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>&amp;Wek</em>&nbsp;</td><td>- referencja do szablonu klasy typu <a class="el" href="class_wektor.html">Wektor</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="_wektor_8hh_source.html#l00089">89</a> pliku <a class="el" href="_wektor_8hh_source.html">Wektor.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a819aa25942acc1bc4adcbc6e63081d39"></a><!-- doxytag: member="Wektor.hh::operator&gt;&gt;" ref="a819aa25942acc1bc4adcbc6e63081d39" args="(std::istream &amp;Strm, Wektor&lt; Typ, ROZMIAR &gt; &amp;Wek)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Typ , int ROZMIAR&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>Strm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_wektor.html">Wektor</a>&lt; Typ, ROZMIAR &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>Wek</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>referancja do strumienia wejsciowego </dd></dl>
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>&amp;Strm</em>&nbsp;</td><td>- referencja do strumienia wejsciowego </td></tr>
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>&amp;Wek</em>&nbsp;</td><td>- referencja do szablonu klasy typu <a class="el" href="class_wektor.html">Wektor</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="pre"><dt><b>Warunek wstępny:</b></dt><dd>Wymagane sa liczby w ilosci stalej ROZMIAR </dd></dl>
+
+<p>Definicja w linii <a class="el" href="_wektor_8hh_source.html#l00075">75</a> pliku <a class="el" href="_wektor_8hh_source.html">Wektor.hh</a>.</p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu May 15 2014 17:10:37 dla UkladRownan programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

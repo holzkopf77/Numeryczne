@@ -1,0 +1,119 @@
+\hypertarget{_wektor_8hh}{
+\section{Dokumentacja pliku Wektor.hh}
+\label{_wektor_8hh}\index{Wektor.hh@{Wektor.hh}}
+}
+
+
+Szablon Klasy wektor modeluje wektor w programie, przechowuje go jako 3elementowa tablice typu double Jej metody to operacje arytmetyczne na wektorach.  
+
+
+{\ttfamily \#include $<$iomanip$>$}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include \char`\"{}LZespolona.hh\char`\"{}}\par
+Wykres zależności załączania dla Wektor.hh:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_wektor_8hh__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{_wektor_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wektor}{Wektor$<$ Typ, ROZMIAR $>$}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\std::istream \& \hyperlink{_wektor_8hh_a819aa25942acc1bc4adcbc6e63081d39}{operator$>$$>$} (std::istream \&Strm, \hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \&Wek)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $>$$>$ sluzy do wczytywania wektora skladajacego sie z liczb podanych przez uzytkownika. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\std::ostream \& \hyperlink{_wektor_8hh_ad9cda9bedc161ef0997004ec02402850}{operator$<$$<$} (std::ostream \&Strm, const \hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \&Wek)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $<$$<$ sluzy do wypisywanie na strumien wejsciowy wektora sladajacego sie z liczb znajdujacych sie w pamieci. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Typ , int ROZMIAR$>$ }\\\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{_wektor_8hh_a7c5d0bef7270148f7dcc5629c0728deb}{operator$\ast$} (const double Liczba, const \hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \_\-V)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia liczby przez wektor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w pliku \hyperlink{_wektor_8hh_source}{Wektor.hh}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{_wektor_8hh_a7c5d0bef7270148f7dcc5629c0728deb}{
+\index{Wektor.hh@{Wektor.hh}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wektor.hh@{Wektor.hh}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$Typ,ROZMIAR$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double}]{ Liczba, }
+\item[{const {\bf Wektor}$<$ Typ, ROZMIAR $>$}]{ \_\-V}
+\end{DoxyParamCaption}
+)}}
+\label{_wektor_8hh_a7c5d0bef7270148f7dcc5629c0728deb}
+\begin{DoxyReturn}{Zwraca}
+referencja \hyperlink{class_wektor}{Wektor} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Liczba}]-\/ liczba rzeczywista \item[\mbox{\tt[in]} {\em \_\-V}]-\/ wektor \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie wektora i podanie liczby 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+mnozenie liczby przez wektor, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 121 pliku Wektor.hh.
+
+\hypertarget{_wektor_8hh_ad9cda9bedc161ef0997004ec02402850}{
+\index{Wektor.hh@{Wektor.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wektor.hh@{Wektor.hh}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ Strm, }
+\item[{const {\bf Wektor}$<$ Typ, ROZMIAR $>$ \&}]{ Wek}
+\end{DoxyParamCaption}
+)}}
+\label{_wektor_8hh_ad9cda9bedc161ef0997004ec02402850}
+\begin{DoxyReturn}{Zwraca}
+referencja do strumienia wejsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wejsciowego \item[\mbox{\tt[in,out]} {\em \&Wek}]-\/ referencja do szablonu klasy typu \hyperlink{class_wektor}{Wektor} \end{DoxyParams}
+
+
+Definicja w linii 89 pliku Wektor.hh.
+
+\hypertarget{_wektor_8hh_a819aa25942acc1bc4adcbc6e63081d39}{
+\index{Wektor.hh@{Wektor.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Wektor.hh@{Wektor.hh}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ Strm, }
+\item[{{\bf Wektor}$<$ Typ, ROZMIAR $>$ \&}]{ Wek}
+\end{DoxyParamCaption}
+)}}
+\label{_wektor_8hh_a819aa25942acc1bc4adcbc6e63081d39}
+\begin{DoxyReturn}{Zwraca}
+referancja do strumienia wejsciowego 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wejsciowego \item[\mbox{\tt[in,out]} {\em \&Wek}]-\/ referencja do szablonu klasy typu \hyperlink{class_wektor}{Wektor} \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+Wymagane sa liczby w ilosci stalej ROZMIAR 
+\end{DoxyPrecond}
+
+
+Definicja w linii 75 pliku Wektor.hh.
+

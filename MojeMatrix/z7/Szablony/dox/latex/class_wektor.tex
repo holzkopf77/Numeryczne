@@ -1,0 +1,240 @@
+\hypertarget{class_wektor}{
+\section{Dokumentacja szablonu klasy Wektor$<$ Typ, ROZMIAR $>$}
+\label{class_wektor}\index{Wektor@{Wektor}}
+}
+
+
+{\ttfamily \#include $<$Wektor.hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Typ \hyperlink{class_wektor_a0da276143fa53c457a7d1c836fe0fee6}{operator\mbox{[}$\,$\mbox{]}} (int Ind) const 
+\begin{DoxyCompactList}\small\item\em Przeciazenia indeksow dla wektora Funkcja operatorowa \mbox{[}\mbox{]} sluzy do indeksowania klasy \hyperlink{class_wektor}{Wektor},by moc odnosic sie w bezposredni sposob do tablicy typu double tej klasy. \item\end{DoxyCompactList}\item 
+Typ \& \hyperlink{class_wektor_ab1cf35ef42f4d254639df879b86560b5}{operator\mbox{[}$\,$\mbox{]}} (int Ind)
+\begin{DoxyCompactList}\small\item\em Przeciazenia indeksow dla wektora Funkcja operatorowa \mbox{[}\mbox{]} sluzy do indeksowania klasy \hyperlink{class_wektor}{Wektor},by moc odnosic sie w bezposredni sposob do tablicy typu double tej klasy. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_wektor_a69adce9a9015aa4ccca6320ca93a7a41}{operator$\ast$} (double liczba) const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia wektora przez liczbe. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_wektor_a3dac94ec81b3bdbcd64565c3ae75230f}{operator+} (\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ Q) const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej + sluzy do dodawania dwoch wektorow. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_wektor_a369fcd56f09fe24c09582ab65f737cbf}{operator-\/} (\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ Q) const 
+\begin{DoxyCompactList}\small\item\em Szablon Funkcji operatorowej -\/ sluzy do odejmowania dwoch wektorow. \item\end{DoxyCompactList}\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_wektor_aa0e6e381f2099b4b6c8a0131e2c2f6e4}{operator/} (double Liczba) const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej / sluzy do dzielenia wektora przez liczbe. \item\end{DoxyCompactList}\item 
+Typ \hyperlink{class_wektor_a4ef2829992c2337f21c78e36b3b08cb8}{operator$\ast$} (\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ Q) const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia wektor przez wektor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Typ \hyperlink{class_wektor_a0d996feb5ea3412a985abaac93060e4b}{\_\-V} \mbox{[}ROZMIAR\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , int rozmiarek$>$ }\\\hyperlink{class_wektor}{Wektor}$<$ T, rozmiarek $>$ \hyperlink{class_wektor_a2ac81a8a61e14506afca4629675977af}{operator$\ast$} (const double Liczba, const \hyperlink{class_wektor}{Wektor}$<$ T, rozmiarek $>$ \hyperlink{class_wektor_a0d996feb5ea3412a985abaac93060e4b}{\_\-V})
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $\ast$ sluzy do mnozenia liczby przez wektor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ, int ROZMIAR$>$ class Wektor$<$ Typ, ROZMIAR $>$}
+
+
+
+Definicja w linii 14 pliku Wektor.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_wektor_a69adce9a9015aa4ccca6320ca93a7a41}{
+\index{Wektor@{Wektor}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wektor@{Wektor}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{ Liczba}
+\end{DoxyParamCaption}
+) const}}
+\label{class_wektor_a69adce9a9015aa4ccca6320ca93a7a41}
+\begin{DoxyReturn}{Zwraca}
+element typu \hyperlink{class_wektor}{Wektor} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Liczba-\/}]liczba rzeczywista \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie wektora i podanie liczby 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+mnozenie wektora przw wektor, wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 105 pliku Wektor.hh.
+
+\hypertarget{class_wektor_a4ef2829992c2337f21c78e36b3b08cb8}{
+\index{Wektor@{Wektor}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wektor@{Wektor}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ Typ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Wektor}$<$ Typ, ROZMIAR $>$}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_wektor_a4ef2829992c2337f21c78e36b3b08cb8}
+\begin{DoxyReturn}{Zwraca}
+element typu double 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q-\/}]element typu szablon wektor \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie 2 wektorow 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+mnozenie wektora przez wektor, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 136 pliku Wektor.hh.
+
+\hypertarget{class_wektor_a3dac94ec81b3bdbcd64565c3ae75230f}{
+\index{Wektor@{Wektor}!operator+@{operator+}}
+\index{operator+@{operator+}!Wektor@{Wektor}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Wektor}$<$ Typ, ROZMIAR $>$}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_wektor_a3dac94ec81b3bdbcd64565c3ae75230f}
+\begin{DoxyReturn}{Zwraca}
+referencja \hyperlink{class_wektor}{Wektor} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q}]-\/ argument typu szablon \hyperlink{class_wektor}{Wektor} \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie dwoch wektorow 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+dodanie dwoch wektorow, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 152 pliku Wektor.hh.
+
+\hypertarget{class_wektor_a369fcd56f09fe24c09582ab65f737cbf}{
+\index{Wektor@{Wektor}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Wektor@{Wektor}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Wektor}$<$ Typ, ROZMIAR $>$}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_wektor_a369fcd56f09fe24c09582ab65f737cbf}
+\begin{DoxyReturn}{Zwraca}
+referencja do \hyperlink{class_wektor}{Wektor} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q}]-\/ argument typu szablon \hyperlink{class_wektor}{Wektor} \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie dwoch wektorow 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+odjecie dwoch wektorow, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 167 pliku Wektor.hh.
+
+\hypertarget{class_wektor_aa0e6e381f2099b4b6c8a0131e2c2f6e4}{
+\index{Wektor@{Wektor}!operator/@{operator/}}
+\index{operator/@{operator/}!Wektor@{Wektor}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator/ (
+\begin{DoxyParamCaption}
+\item[{double}]{ Liczba}
+\end{DoxyParamCaption}
+) const}}
+\label{class_wektor_aa0e6e381f2099b4b6c8a0131e2c2f6e4}
+\begin{DoxyReturn}{Zwraca}
+referencja \hyperlink{class_wektor}{Wektor} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawne wczytanie wektora i podanie liczby 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+dzielenie wektora przez liczbe, wynik jako wartosc zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 182 pliku Wektor.hh.
+
+\hypertarget{class_wektor_ab1cf35ef42f4d254639df879b86560b5}{
+\index{Wektor@{Wektor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wektor@{Wektor}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ Typ\& {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Ind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wektor_ab1cf35ef42f4d254639df879b86560b5}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawny argument(int) w indeksie 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+wynik,jako wartosc double zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 35 pliku Wektor.hh.
+
+\hypertarget{class_wektor_a0da276143fa53c457a7d1c836fe0fee6}{
+\index{Wektor@{Wektor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wektor@{Wektor}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ Typ {\bf Wektor}$<$ Typ, ROZMIAR $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Ind}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_wektor_a0da276143fa53c457a7d1c836fe0fee6}
+\begin{DoxyPrecond}{Warunek wstępny}
+poprawny argument(int) w indeksie 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+wynik,jako wartosc double zwracana przez funkcje 
+\end{DoxyReturn}
+
+
+Definicja w linii 26 pliku Wektor.hh.
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_wektor_a2ac81a8a61e14506afca4629675977af}{
+\index{Wektor@{Wektor}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wektor@{Wektor}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ template$<$typename T , int rozmiarek$>$ {\bf Wektor}$<$T,rozmiarek$>$ operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double}]{ Liczba, }
+\item[{const {\bf Wektor}$<$ T, rozmiarek $>$}]{ \_\-V}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_wektor_a2ac81a8a61e14506afca4629675977af}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_wektor_a0d996feb5ea3412a985abaac93060e4b}{
+\index{Wektor@{Wektor}!\_\-V@{\_\-V}}
+\index{\_\-V@{\_\-V}!Wektor@{Wektor}}
+\subsubsection[{\_\-V}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ Typ {\bf Wektor}$<$ Typ, ROZMIAR $>$::{\bf \_\-V}\mbox{[}ROZMIAR\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_wektor_a0d996feb5ea3412a985abaac93060e4b}
+
+
+Definicja w linii 15 pliku Wektor.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_wektor_8hh}{Wektor.hh}\end{DoxyCompactItemize}

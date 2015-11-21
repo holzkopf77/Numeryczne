@@ -1,0 +1,90 @@
+\hypertarget{_l_zespolona_8hh}{
+\section{Dokumentacja pliku LZespolona.hh}
+\label{_l_zespolona_8hh}\index{LZespolona.hh@{LZespolona.hh}}
+}
+
+
+Klasa \hyperlink{class_l_zespolona}{LZespolona} sluzy do przechowywania liczby zespolonej w programie oraz do wykonywania operacji matematycznych na niej.  
+
+
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{_l_zespolona_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_l_zespolona}{LZespolona}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{_l_zespolona_8hh_ab7b96610b555631a2b10bd9c097abb55}{operator$<$$<$} (std::ostream \&Strm, const \hyperlink{class_l_zespolona}{LZespolona} \&WyswLiczba)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa pozwala na wypisanie liczby zespolonej. \item\end{DoxyCompactList}\item 
+std::istream \& \hyperlink{_l_zespolona_8hh_a36c8f5a74b4b81f5c1f9142ad5a958b9}{operator$>$$>$} (std::istream \&Strm, \hyperlink{class_l_zespolona}{LZespolona} \&Z)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa pozwala na wczytanie liczby zespolonej. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w pliku \hyperlink{_l_zespolona_8hh_source}{LZespolona.hh}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{_l_zespolona_8hh_ab7b96610b555631a2b10bd9c097abb55}{
+\index{LZespolona.hh@{LZespolona.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!LZespolona.hh@{LZespolona.hh}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ Strm, }
+\item[{const {\bf LZespolona} \&}]{ WyswLiczba}
+\end{DoxyParamCaption}
+)}}
+\label{_l_zespolona_8hh_ab7b96610b555631a2b10bd9c097abb55}
+brief Wyswietlenie liczby zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wyjsciowego \item[\mbox{\tt[in,out]} {\em \&WyswLiczba}]refencja do klasy typu LZesp \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca referencje do strumienia wyjsciowego 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie liczby zespolonej 
+\end{DoxyPrecond}
+
+
+Definicja w linii 205 pliku LZespolona.cpp.
+
+\hypertarget{_l_zespolona_8hh_a36c8f5a74b4b81f5c1f9142ad5a958b9}{
+\index{LZespolona.hh@{LZespolona.hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!LZespolona.hh@{LZespolona.hh}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ Strm, }
+\item[{{\bf LZespolona} \&}]{ Z}
+\end{DoxyParamCaption}
+)}}
+\label{_l_zespolona_8hh_a36c8f5a74b4b81f5c1f9142ad5a958b9}
+brief Wczytywanie liczby zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in,out]} {\em \&Strm}]-\/ referencja do strumienia wejsciowego \item[\mbox{\tt[in,out]} {\em \&Z}]referencja do klasy typu LZesp \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca referencje do strumienia wejsciowego 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Liczbe nalezy podawac w nawiasach klamrowych 
+
+Zawsze musi byc podana czesc rzeczywista i czesc urojona 
+\end{DoxyPrecond}
+
+
+Definicja w linii 245 pliku LZespolona.cpp.
+

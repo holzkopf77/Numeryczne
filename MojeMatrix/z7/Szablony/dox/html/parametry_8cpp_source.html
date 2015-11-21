@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>UkladRownan: Plik źródłowy parametry.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&nbsp;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="dir_5acca7a69a50425ed15b726665a92491.html">prj</a>      </li>
+      <li><a class="el" href="dir_ea2c729999eb9d91c9fc78d011a1a046.html">src</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>parametry.cpp</h1>  </div>
+</div>
+<div class="contents">
+<a href="parametry_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//Wykorzystane ponizej funkcje sa funkcja wykonanymi przez dr Kreczmera</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;<a class="code" href="parametry_8hh.html" title="Struktura zawiera wszystkie pola odpowiadajace parametrom z jakimi moze zostac wywolany program...">parametry.hh</a>&quot;</span>
+<a name="l00003"></a><a class="code" href="parametry_8cpp.html#ac4f92db10fea9b5bd0337dcfa87f1850">00003</a> <span class="preprocessor">#define ROZMIAR_LINII 100</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span>
+<a name="l00025"></a><a class="code" href="parametry_8cpp.html#a6a3243d05d7fffdaeba9fefd7549285a">00025</a> <span class="keywordtype">bool</span> <a class="code" href="parametry_8hh.html#a6a3243d05d7fffdaeba9fefd7549285a" title="Kowertuje napis zawierający znaki cyfr na liczbe reprezentowana przez ten napis.">Konwertu_NapisNaLiczbe</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* wNapis, <span class="keywordtype">double</span> &amp;Liczba )
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027   istringstream  StrWe(wNapis);
+<a name="l00028"></a>00028   <span class="keywordtype">char</span>           ZnakTestowy;
+<a name="l00029"></a>00029   
+<a name="l00030"></a>00030   StrWe &gt;&gt; Liczba;
+<a name="l00031"></a>00031   <span class="keywordflow">if</span> (StrWe.fail()) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00032"></a>00032   StrWe &gt;&gt; ZnakTestowy; <span class="comment">// Jesl operacja zakonczy sie powodzeniem, to ZLE!!!</span>
+<a name="l00033"></a>00033                         <span class="comment">// Wynika z tego, ze napis zawiera dodatkowe znaki,</span>
+<a name="l00034"></a>00034                         <span class="comment">// ktore nie sa cyframi.</span>
+<a name="l00035"></a>00035   <span class="keywordflow">return</span> StrWe.fail();
+<a name="l00036"></a>00036 }
+<a name="l00037"></a>00037 
+<a name="l00055"></a><a class="code" href="parametry_8cpp.html#aedf4a4e7e6152bd7ad1c411cf10cef3d">00055</a> <span class="keywordtype">bool</span> <a class="code" href="parametry_8hh.html#aedf4a4e7e6152bd7ad1c411cf10cef3d" title="Analizuje parametry linii wywolania i inicjalizuje odpowienie pola w strukturze &amp;quot;ParametryWywola...">AnalizujParametry</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[], <a class="code" href="struct_parametry_wywolania.html">ParametryWywolania</a> &amp;  Param)
+<a name="l00056"></a>00056 {
+<a name="l00057"></a>00057   <span class="keywordtype">char</span> Opt;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059   <span class="keywordflow">while</span> ((Opt = getopt(argc,argv,<span class="stringliteral">&quot;t:r:&quot;</span>)) != -1) {
+<a name="l00060"></a>00060     <span class="keywordflow">switch</span> (Opt) {
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062     <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span> :
+<a name="l00063"></a>00063       Param.<a class="code" href="struct_parametry_wywolania.html#abf36771f054fdc5a8d4dac2f3550e2bf">_Param_opcji_t</a> = optarg;
+<a name="l00064"></a>00064       <span class="keywordflow">break</span>;
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066     <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span> :
+<a name="l00067"></a>00067       <span class="keywordflow">if</span> (!<a class="code" href="parametry_8hh.html#a6a3243d05d7fffdaeba9fefd7549285a" title="Kowertuje napis zawierający znaki cyfr na liczbe reprezentowana przez ten napis.">Konwertu_NapisNaLiczbe</a>(optarg, Param.<a class="code" href="struct_parametry_wywolania.html#af8a56df8270170afd9ab44c14d6dce86">_Param_opcji_r</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00068"></a>00068       <span class="keywordflow">break</span>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070     <span class="keywordflow">default</span>:
+<a name="l00071"></a>00071       <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00072"></a>00072     }
+<a name="l00073"></a>00073   }
+<a name="l00074"></a>00074   <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00075"></a>00075 }
+</pre></div></div>
+</div>
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu May 15 2014 17:10:37 dla UkladRownan programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

@@ -1,0 +1,553 @@
+\hypertarget{class_l_zespolona}{
+\section{Dokumentacja klasy LZespolona}
+\label{class_l_zespolona}\index{LZespolona@{LZespolona}}
+}
+
+
+{\ttfamily \#include $<$LZespolona.hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_zespolona_a21fe2844a13cde80d7b00b891676296a}{LZespolona} ()
+\item 
+\hyperlink{class_l_zespolona_a46e0b6cdeb67e49640da865c0d01b671}{LZespolona} (double Re, double Im)
+\item 
+double \hyperlink{class_l_zespolona_a06ce2b4a22c1ca3f8d97e41b602f078e}{Re} () const 
+\item 
+double \hyperlink{class_l_zespolona_ad4057ab72b1471f38df277781baa0752}{Im} () const 
+\item 
+double \hyperlink{class_l_zespolona_a20dc93a471c88944e5c6efbc69b05f46}{operator\mbox{[}$\,$\mbox{]}} (int Ind) const 
+\item 
+double \& \hyperlink{class_l_zespolona_a77261afaa75950cb785bbffdff4b3cf7}{operator\mbox{[}$\,$\mbox{]}} (int Ind)
+\item 
+double \hyperlink{class_l_zespolona_aa9f4cab72cd025614fc5e2facb515e6e}{Modul} () const 
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca modul liczby zespolonej. \item\end{DoxyCompactList}\item 
+int \hyperlink{class_l_zespolona_a4499e73b6e5b883df008be2694698f46}{operator==} (\hyperlink{class_l_zespolona}{LZespolona} const \&W)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa porownuje czesci rzeczywiste oraz czesci urojone liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_aa744e58a7aede6f7318d4f9d3d9b650d}{operator+} (const \hyperlink{class_l_zespolona}{LZespolona} \&Q) const 
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa dodaje liczby zespolone. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_ad3875fdfa4e365029281d3dd0588dd68}{operator-\/} (const \hyperlink{class_l_zespolona}{LZespolona} \&B) const 
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa odejmuje liczby zespolone. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_a778727af986d4b8cddcbd089c6083644}{operator$\ast$} (const \hyperlink{class_l_zespolona}{LZespolona} \&Q) const 
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa mnozy liczby zespolone. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_aea67f672eb082a069c394f2aa832c65e}{operator/} (const \hyperlink{class_l_zespolona}{LZespolona} \&Q) const 
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa sluzy do dzielenia liczby zespolonej przez zespolona. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_a35b451d6d3bd0b0782bb1a73517e7f04}{operator-\/} () const 
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa liczbe zespolona na przeciwna. \item\end{DoxyCompactList}\item 
+const double \& \hyperlink{class_l_zespolona_aad1062d600b75272470a7b6e0b627000}{operator=} (const double \&a)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa = pozwala przypisac liczbe rzeczywista liczbie zespolonej. \item\end{DoxyCompactList}\item 
+const int \& \hyperlink{class_l_zespolona_a1956d27ba5a7c68dd4e8adba81db23da}{operator=} (const int \&a)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa = pozwala przypisac liczbe calkowita liczbie zespolonej. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_l_zespolona_a2c047555071a543fbe6a25e7ccb949c8}{\_\-re}
+\item 
+double \hyperlink{class_l_zespolona_af9a4d283c2939ea8b427e1eb0358cb2c}{\_\-im}
+\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_a48f8e9c2b37ad5b3b8b964c25346b930}{operator+} (const double Liczba, const \hyperlink{class_l_zespolona}{LZespolona} \&Z)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa dodaje liczbe rzeczywista do liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_aef47f3e429efa18ade4555f77df27014}{operator+} (const \hyperlink{class_l_zespolona}{LZespolona} \&Z, const double Liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa dodaje liczbe rzeczywista do liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_a896efd2b35c96235e487819ad646aebb}{operator$\ast$} (const double Liczba, const \hyperlink{class_l_zespolona}{LZespolona} \&Z)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa mnozy liczbe rzeczywista do liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_a7cc8baeda5b16a42f0a193d3fbaf0a64}{operator$\ast$} (const \hyperlink{class_l_zespolona}{LZespolona} \&Z, const double Liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa mnozy liczbe rzeczywista do liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_afd6ac9993dc5c5279a990b98d607b2d4}{operator-\/} (const \hyperlink{class_l_zespolona}{LZespolona} \&Z, const double Liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa odejmuje liczbe rzeczywista od liczby zespolonej. \item\end{DoxyCompactList}\item 
+\hyperlink{class_l_zespolona}{LZespolona} \hyperlink{class_l_zespolona_adde8e8baef5452a13cc50c8c72e8d397}{operator/} (const \hyperlink{class_l_zespolona}{LZespolona} \&Z, const double Liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja operatorowa dzieli liczbe zespolona przez liczbe zespolona. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 10 pliku LZespolona.hh.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_l_zespolona_a21fe2844a13cde80d7b00b891676296a}{
+\index{LZespolona@{LZespolona}!LZespolona@{LZespolona}}
+\index{LZespolona@{LZespolona}!LZespolona@{LZespolona}}
+\subsubsection[{LZespolona}]{\setlength{\rightskip}{0pt plus 5cm}LZespolona::LZespolona (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_a21fe2844a13cde80d7b00b891676296a}
+brief Domniemany konstruktor liczby zespolonej 
+
+Definicja w linii 26 pliku LZespolona.hh.
+
+\hypertarget{class_l_zespolona_a46e0b6cdeb67e49640da865c0d01b671}{
+\index{LZespolona@{LZespolona}!LZespolona@{LZespolona}}
+\index{LZespolona@{LZespolona}!LZespolona@{LZespolona}}
+\subsubsection[{LZespolona}]{\setlength{\rightskip}{0pt plus 5cm}LZespolona::LZespolona (
+\begin{DoxyParamCaption}
+\item[{double}]{ Re, }
+\item[{double}]{ Im}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_a46e0b6cdeb67e49640da865c0d01b671}
+brief Konstruktor liczby zespolonej z 2 argumentami typu double 
+
+Definicja w linii 30 pliku LZespolona.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_l_zespolona_ad4057ab72b1471f38df277781baa0752}{
+\index{LZespolona@{LZespolona}!Im@{Im}}
+\index{Im@{Im}!LZespolona@{LZespolona}}
+\subsubsection[{Im}]{\setlength{\rightskip}{0pt plus 5cm}double LZespolona::Im (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_ad4057ab72b1471f38df277781baa0752}
+brief Funkcja zwraca czesc urojona liczby zespolonej 
+
+Definicja w linii 39 pliku LZespolona.hh.
+
+\hypertarget{class_l_zespolona_aa9f4cab72cd025614fc5e2facb515e6e}{
+\index{LZespolona@{LZespolona}!Modul@{Modul}}
+\index{Modul@{Modul}!LZespolona@{LZespolona}}
+\subsubsection[{Modul}]{\setlength{\rightskip}{0pt plus 5cm}double LZespolona::Modul (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_aa9f4cab72cd025614fc5e2facb515e6e}
+brief Funkcja zwraca modul liczby zespolonej
+
+\begin{DoxyReturn}{Zwraca}
+zwraca modul liczby zespolonej 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie liczby zespolonej 
+\end{DoxyPrecond}
+
+
+Definicja w linii 18 pliku LZespolona.cpp.
+
+
+
+Oto graf wywołań dla tej funkcji:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_l_zespolona_aa9f4cab72cd025614fc5e2facb515e6e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_l_zespolona_a778727af986d4b8cddcbd089c6083644}{
+\index{LZespolona@{LZespolona}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!LZespolona@{LZespolona}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} LZespolona::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_a778727af986d4b8cddcbd089c6083644}
+brief Mnozenie liczb zespolonych
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q}]-\/ liczba zespolona. \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 70 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_aa744e58a7aede6f7318d4f9d3d9b650d}{
+\index{LZespolona@{LZespolona}!operator+@{operator+}}
+\index{operator+@{operator+}!LZespolona@{LZespolona}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} LZespolona::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_aa744e58a7aede6f7318d4f9d3d9b650d}
+brief Dodawanie liczb zespolonych
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q}]-\/ liczba zespolona. \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 29 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_ad3875fdfa4e365029281d3dd0588dd68}{
+\index{LZespolona@{LZespolona}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!LZespolona@{LZespolona}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} LZespolona::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ B}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_ad3875fdfa4e365029281d3dd0588dd68}
+brief Odejmowanie liczb zespolonych
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em B}]-\/ liczba zespolona. \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 56 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a35b451d6d3bd0b0782bb1a73517e7f04}{
+\index{LZespolona@{LZespolona}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!LZespolona@{LZespolona}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} LZespolona::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_a35b451d6d3bd0b0782bb1a73517e7f04}
+brief Odejmowanie liczb zespolonych
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie liczby zespolonej 
+\end{DoxyPrecond}
+
+
+Definicja w linii 42 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_aea67f672eb082a069c394f2aa832c65e}{
+\index{LZespolona@{LZespolona}!operator/@{operator/}}
+\index{operator/@{operator/}!LZespolona@{LZespolona}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} LZespolona::operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Q}
+\end{DoxyParamCaption}
+) const}}
+\label{class_l_zespolona_aea67f672eb082a069c394f2aa832c65e}
+brief Dzielenie liczb zespolonych
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em Q}]-\/ liczba zespolona. \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 85 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a1956d27ba5a7c68dd4e8adba81db23da}{
+\index{LZespolona@{LZespolona}!operator=@{operator=}}
+\index{operator=@{operator=}!LZespolona@{LZespolona}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}const int \& LZespolona::operator= (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{ a}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_zespolona_a1956d27ba5a7c68dd4e8adba81db23da}
+brief Przypisanie wartosci calkowitej liczbie zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em \&a}]-\/ referencja do liczby calkowitej \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca referencje do liczby calkowitej 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Warunek końcowy}
+Liczba zostaje zrzutowana na typ rzeczywisty 
+\end{DoxyPostcond}
+
+
+Definicja w linii 230 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_aad1062d600b75272470a7b6e0b627000}{
+\index{LZespolona@{LZespolona}!operator=@{operator=}}
+\index{operator=@{operator=}!LZespolona@{LZespolona}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}const double \& LZespolona::operator= (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{ a}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_zespolona_aad1062d600b75272470a7b6e0b627000}
+brief Przypisanie wartosci rzeczywistej liczbie zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em \&a}]-\/ referencja do liczby rzeczywistej \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca referencje do liczby rzeczywistej 
+\end{DoxyReturn}
+
+
+Definicja w linii 216 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a4499e73b6e5b883df008be2694698f46}{
+\index{LZespolona@{LZespolona}!operator==@{operator==}}
+\index{operator==@{operator==}!LZespolona@{LZespolona}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}int LZespolona::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf LZespolona} const \&}]{ W}
+\end{DoxyParamCaption}
+)}}
+\label{class_l_zespolona_a4499e73b6e5b883df008be2694698f46}
+brief Przeciazenie operatora porownania dla liczb zespolonych
+
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em W}]-\/ liczba zespolona. \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 100 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a20dc93a471c88944e5c6efbc69b05f46}{
+\index{LZespolona@{LZespolona}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!LZespolona@{LZespolona}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double LZespolona::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Ind}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_a20dc93a471c88944e5c6efbc69b05f46}
+brief Przeciazenie operatora indeksowania dla liczby zespolonej 
+
+Definicja w linii 43 pliku LZespolona.hh.
+
+\hypertarget{class_l_zespolona_a77261afaa75950cb785bbffdff4b3cf7}{
+\index{LZespolona@{LZespolona}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!LZespolona@{LZespolona}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double\& LZespolona::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ Ind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_a77261afaa75950cb785bbffdff4b3cf7}
+brief Przeciazenie operatora indeksowania dla liczby zespolonej 
+
+Definicja w linii 47 pliku LZespolona.hh.
+
+\hypertarget{class_l_zespolona_a06ce2b4a22c1ca3f8d97e41b602f078e}{
+\index{LZespolona@{LZespolona}!Re@{Re}}
+\index{Re@{Re}!LZespolona@{LZespolona}}
+\subsubsection[{Re}]{\setlength{\rightskip}{0pt plus 5cm}double LZespolona::Re (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_l_zespolona_a06ce2b4a22c1ca3f8d97e41b602f078e}
+brief Funkcja zwraca czesc rzeczywista liczby zespolonej 
+
+Definicja w linii 35 pliku LZespolona.hh.
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_l_zespolona_a896efd2b35c96235e487819ad646aebb}{
+\index{LZespolona@{LZespolona}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!LZespolona@{LZespolona}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double}]{ Liczba, }
+\item[{const {\bf LZespolona} \&}]{ Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_a896efd2b35c96235e487819ad646aebb}
+briefMnozenie liczby(niezespolonej) z liczba niezespolona
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 158 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a7cc8baeda5b16a42f0a193d3fbaf0a64}{
+\index{LZespolona@{LZespolona}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!LZespolona@{LZespolona}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Z, }
+\item[{const double}]{ Liczba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_a7cc8baeda5b16a42f0a193d3fbaf0a64}
+brief Mnozenie liczby(niezespolonej) z liczba niezespolona
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 174 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_aef47f3e429efa18ade4555f77df27014}{
+\index{LZespolona@{LZespolona}!operator+@{operator+}}
+\index{operator+@{operator+}!LZespolona@{LZespolona}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Z, }
+\item[{const double}]{ Liczba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_aef47f3e429efa18ade4555f77df27014}
+brief Dodawanie liczby(nie zespolonej) do liczby zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 128 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_a48f8e9c2b37ad5b3b8b964c25346b930}{
+\index{LZespolona@{LZespolona}!operator+@{operator+}}
+\index{operator+@{operator+}!LZespolona@{LZespolona}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator+ (
+\begin{DoxyParamCaption}
+\item[{const double}]{ Liczba, }
+\item[{const {\bf LZespolona} \&}]{ Z}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_a48f8e9c2b37ad5b3b8b964c25346b930}
+brief Dodawanie liczby(nie zespolonej) do liczby zespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 113 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_afd6ac9993dc5c5279a990b98d607b2d4}{
+\index{LZespolona@{LZespolona}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!LZespolona@{LZespolona}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Z, }
+\item[{const double}]{ Liczba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_afd6ac9993dc5c5279a990b98d607b2d4}
+brief Odejmowanie od liczby zespolonej liczby niezespolonej
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 143 pliku LZespolona.cpp.
+
+\hypertarget{class_l_zespolona_adde8e8baef5452a13cc50c8c72e8d397}{
+\index{LZespolona@{LZespolona}!operator/@{operator/}}
+\index{operator/@{operator/}!LZespolona@{LZespolona}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf LZespolona} operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf LZespolona} \&}]{ Z, }
+\item[{const double}]{ Liczba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_l_zespolona_adde8e8baef5452a13cc50c8c72e8d397}
+brief Dzielenie liczby zespolonej przez liczbe niezespolona
+
+
+\begin{DoxyParams}{Parametry}
+\item[{\em Z}]-\/ liczba zespolona. \item[{\em Liczba}]-\/ liczba rzeczywista \end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca liczbe zespolona. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie dwoch liczb zespolonych 
+\end{DoxyPrecond}
+
+
+Definicja w linii 190 pliku LZespolona.cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_l_zespolona_af9a4d283c2939ea8b427e1eb0358cb2c}{
+\index{LZespolona@{LZespolona}!\_\-im@{\_\-im}}
+\index{\_\-im@{\_\-im}!LZespolona@{LZespolona}}
+\subsubsection[{\_\-im}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf LZespolona::\_\-im}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_l_zespolona_af9a4d283c2939ea8b427e1eb0358cb2c}
+brief czesc urojona liczby zespolonej 
+
+Definicja w linii 19 pliku LZespolona.hh.
+
+\hypertarget{class_l_zespolona_a2c047555071a543fbe6a25e7ccb949c8}{
+\index{LZespolona@{LZespolona}!\_\-re@{\_\-re}}
+\index{\_\-re@{\_\-re}!LZespolona@{LZespolona}}
+\subsubsection[{\_\-re}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf LZespolona::\_\-re}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_l_zespolona_a2c047555071a543fbe6a25e7ccb949c8}
+brief czesc rzeczywista liczby zespolonej 
+
+Definicja w linii 15 pliku LZespolona.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_l_zespolona_8hh}{LZespolona.hh}\item 
+\hyperlink{_l_zespolona_8cpp}{LZespolona.cpp}\end{DoxyCompactItemize}

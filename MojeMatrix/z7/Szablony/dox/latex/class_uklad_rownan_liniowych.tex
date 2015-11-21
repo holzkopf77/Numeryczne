@@ -1,0 +1,123 @@
+\hypertarget{class_uklad_rownan_liniowych}{
+\section{Dokumentacja szablonu klasy UkladRownanLiniowych$<$ Typ, ROZMIAR $>$}
+\label{class_uklad_rownan_liniowych}\index{UkladRownanLiniowych@{UkladRownanLiniowych}}
+}
+
+
+{\ttfamily \#include $<$UkladRownanLiniowych.hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_uklad_rownan_liniowych_a0d78de0a3797294e7d027d7791349637}{RozwiazUklad\_\-WyswietlRozwiazanie} () const 
+\begin{DoxyCompactList}\small\item\em Szablon funkcji RozwiazUklad\_\-WyswietlRozwiazanie sluzy do rozwiazania. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_macierz}{Macierz}$<$ Typ, ROZMIAR $>$ \hyperlink{class_uklad_rownan_liniowych_a7fc31fd6f0dde9d7b95f136576af9471}{Mac}
+\item 
+\hyperlink{class_wektor}{Wektor}$<$ Typ, ROZMIAR $>$ \hyperlink{class_uklad_rownan_liniowych_ad6f84eeebcec882a5755868e05395486}{WyrazyWolne}
+\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , int rozmiarek$>$ }\\std::istream \& \hyperlink{class_uklad_rownan_liniowych_a5e3f1731c16e7f2a693237da0429dbb1}{operator$>$$>$} (std::istream \&Strm, \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych}$<$ T, rozmiarek $>$ \&UklRown)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $>$$>$ sluzy do wczytywania calego wyrazenia (tj macierzy wspolczynnikow oraz wektora wyrazow wolnych podanych przez uzytkownika). \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , int rozmiarek$>$ }\\std::ostream \& \hyperlink{class_uklad_rownan_liniowych_abf2a11f9dfab38690e476c7243a1c95d}{operator$<$$<$} (std::ostream \&Strm, const \hyperlink{class_uklad_rownan_liniowych}{UkladRownanLiniowych}$<$ T, rozmiarek $>$ \&UklRown)
+\begin{DoxyCompactList}\small\item\em Szablon funkcji operatorowej $<$$<$ sluzy do wypisywania na strumien wyjsciowy calego wyrazenia skladajacego sie z liczb znajdujacych sie w pamieci. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ, int ROZMIAR$>$ class UkladRownanLiniowych$<$ Typ, ROZMIAR $>$}
+
+
+
+Definicja w linii 16 pliku UkladRownanLiniowych.hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_uklad_rownan_liniowych_a0d78de0a3797294e7d027d7791349637}{
+\index{UkladRownanLiniowych@{UkladRownanLiniowych}!RozwiazUklad\_\-WyswietlRozwiazanie@{RozwiazUklad\_\-WyswietlRozwiazanie}}
+\index{RozwiazUklad\_\-WyswietlRozwiazanie@{RozwiazUklad\_\-WyswietlRozwiazanie}!UkladRownanLiniowych@{UkladRownanLiniowych}}
+\subsubsection[{RozwiazUklad\_\-WyswietlRozwiazanie}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ , int ROZMIAR$>$ {\bf Wektor}$<$ Typ, ROZMIAR $>$ {\bf UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$::RozwiazUklad\_\-WyswietlRozwiazanie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_uklad_rownan_liniowych_a0d78de0a3797294e7d027d7791349637}
+Szablon funkcji RozwiazUklad\_\-WyswietlRozwiazanie sluzy do rozwiazania ukladu rownan liniowych metoda cramera.
+
+\begin{DoxyPrecond}{Warunek wstępny}
+Poprawne wczytanie UkladuRownanLiniowych 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+Rozwiazanie ukladu rownan i wyswietlenie wyniku. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Warunek końcowy}
+Jezeli wyznacznik jest rowny 0, nastepuje zakonczenie programu i wyswietlenie komunikatu, ze wyzacznik jest zerowy. 
+\end{DoxyPostcond}
+
+
+Definicja w linii 86 pliku UkladRownanLiniowych.hh.
+
+
+
+Oto graf wywołań dla tej funkcji:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_uklad_rownan_liniowych_a0d78de0a3797294e7d027d7791349637_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_uklad_rownan_liniowych_abf2a11f9dfab38690e476c7243a1c95d}{
+\index{UkladRownanLiniowych@{UkladRownanLiniowych}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!UkladRownanLiniowych@{UkladRownanLiniowych}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ template$<$typename T , int rozmiarek$>$ std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{ Strm, }
+\item[{const {\bf UkladRownanLiniowych}$<$ T, rozmiarek $>$ \&}]{ UklRown}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_uklad_rownan_liniowych_abf2a11f9dfab38690e476c7243a1c95d}
+\hypertarget{class_uklad_rownan_liniowych_a5e3f1731c16e7f2a693237da0429dbb1}{
+\index{UkladRownanLiniowych@{UkladRownanLiniowych}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!UkladRownanLiniowych@{UkladRownanLiniowych}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ template$<$typename T , int rozmiarek$>$ std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{ Strm, }
+\item[{{\bf UkladRownanLiniowych}$<$ T, rozmiarek $>$ \&}]{ UklRown}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_uklad_rownan_liniowych_a5e3f1731c16e7f2a693237da0429dbb1}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_uklad_rownan_liniowych_a7fc31fd6f0dde9d7b95f136576af9471}{
+\index{UkladRownanLiniowych@{UkladRownanLiniowych}!Mac@{Mac}}
+\index{Mac@{Mac}!UkladRownanLiniowych@{UkladRownanLiniowych}}
+\subsubsection[{Mac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ {\bf Macierz}$<$Typ,ROZMIAR$>$ {\bf UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$::{\bf Mac}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_uklad_rownan_liniowych_a7fc31fd6f0dde9d7b95f136576af9471}
+
+
+Definicja w linii 18 pliku UkladRownanLiniowych.hh.
+
+\hypertarget{class_uklad_rownan_liniowych_ad6f84eeebcec882a5755868e05395486}{
+\index{UkladRownanLiniowych@{UkladRownanLiniowych}!WyrazyWolne@{WyrazyWolne}}
+\index{WyrazyWolne@{WyrazyWolne}!UkladRownanLiniowych@{UkladRownanLiniowych}}
+\subsubsection[{WyrazyWolne}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ, int ROZMIAR$>$ {\bf Wektor}$<$Typ,ROZMIAR$>$ {\bf UkladRownanLiniowych}$<$ Typ, ROZMIAR $>$::{\bf WyrazyWolne}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_uklad_rownan_liniowych_ad6f84eeebcec882a5755868e05395486}
+
+
+Definicja w linii 19 pliku UkladRownanLiniowych.hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_uklad_rownan_liniowych_8hh}{UkladRownanLiniowych.hh}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\hypertarget{parametry_8cpp}{
+\section{Dokumentacja pliku parametry.cpp}
+\label{parametry_8cpp}\index{parametry.cpp@{parametry.cpp}}
+}
+
+
+funkcje sluzacy do przetwarzania argumentow podanych w konsoli  
+
+
+{\ttfamily \#include \char`\"{}parametry.hh\char`\"{}}\par
+Wykres zależności załączania dla parametry.cpp:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{parametry_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{parametry_8cpp_ac4f92db10fea9b5bd0337dcfa87f1850}{ROZMIAR\_\-LINII}~100
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{parametry_8cpp_a6a3243d05d7fffdaeba9fefd7549285a}{Konwertu\_\-NapisNaLiczbe} (const char $\ast$wNapis, double \&Liczba)
+\begin{DoxyCompactList}\small\item\em Kowertuje napis zawierający znaki cyfr na liczbe reprezentowana przez ten napis. \item\end{DoxyCompactList}\item 
+bool \hyperlink{parametry_8cpp_aedf4a4e7e6152bd7ad1c411cf10cef3d}{AnalizujParametry} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{struct_parametry_wywolania}{ParametryWywolania} \&Param)
+\begin{DoxyCompactList}\small\item\em Analizuje parametry linii wywolania i inicjalizuje odpowienie pola w strukturze \char`\"{}ParametryWywolania\char`\"{}, ktore odpowiadaja poszczegolnym parametrom. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w pliku \hyperlink{parametry_8cpp_source}{parametry.cpp}.
+
+
+
+\subsection{Dokumentacja definicji}
+\hypertarget{parametry_8cpp_ac4f92db10fea9b5bd0337dcfa87f1850}{
+\index{parametry.cpp@{parametry.cpp}!ROZMIAR\_\-LINII@{ROZMIAR\_\-LINII}}
+\index{ROZMIAR\_\-LINII@{ROZMIAR\_\-LINII}!parametry.cpp@{parametry.cpp}}
+\subsubsection[{ROZMIAR\_\-LINII}]{\setlength{\rightskip}{0pt plus 5cm}\#define ROZMIAR\_\-LINII~100}}
+\label{parametry_8cpp_ac4f92db10fea9b5bd0337dcfa87f1850}
+
+
+Definicja w linii 3 pliku parametry.cpp.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{parametry_8cpp_aedf4a4e7e6152bd7ad1c411cf10cef3d}{
+\index{parametry.cpp@{parametry.cpp}!AnalizujParametry@{AnalizujParametry}}
+\index{AnalizujParametry@{AnalizujParametry}!parametry.cpp@{parametry.cpp}}
+\subsubsection[{AnalizujParametry}]{\setlength{\rightskip}{0pt plus 5cm}bool AnalizujParametry (
+\begin{DoxyParamCaption}
+\item[{int}]{ argc, }
+\item[{char $\ast$}]{ argv\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf ParametryWywolania} \&}]{ Param}
+\end{DoxyParamCaption}
+)}}
+\label{parametry_8cpp_aedf4a4e7e6152bd7ad1c411cf10cef3d}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em argc}]-\/ ilosc parametrow z linii wyolania programu. \item[\mbox{\tt[in]} {\em argv}]-\/ tablica napisow zawieraja (w postaci napisow) poszczegolne parametry wywolania programu. \item[\mbox{\tt[in]} {\em Param}]-\/ jego pola odpowiadaja poszczegolnym parametrom wywolania.\end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+argc, argv -\/ zawieraja poprawna ilosc i tablice parametrow wywolania.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Warunek końcowy}
+Param -\/ zostaje zainicjalizowana zgodnie z lista parametrow wywolania programu (o ile one wystapily). 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Zwraca}
+true -\/ jeśli operacja się powiodła, tzn. wszystkie opcje wywołania i ich parametry są poprawne, 
+
+false -\/ w przypadku przeciwnym. 
+\end{DoxyReturn}
+
+
+Definicja w linii 55 pliku parametry.cpp.
+
+
+
+Oto graf wywołań dla tej funkcji:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=358pt]{parametry_8cpp_aedf4a4e7e6152bd7ad1c411cf10cef3d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{parametry_8cpp_a6a3243d05d7fffdaeba9fefd7549285a}{
+\index{parametry.cpp@{parametry.cpp}!Konwertu\_\-NapisNaLiczbe@{Konwertu\_\-NapisNaLiczbe}}
+\index{Konwertu\_\-NapisNaLiczbe@{Konwertu\_\-NapisNaLiczbe}!parametry.cpp@{parametry.cpp}}
+\subsubsection[{Konwertu\_\-NapisNaLiczbe}]{\setlength{\rightskip}{0pt plus 5cm}bool Konwertu\_\-NapisNaLiczbe (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ wNapis, }
+\item[{double \&}]{ Liczba}
+\end{DoxyParamCaption}
+)}}
+\label{parametry_8cpp_a6a3243d05d7fffdaeba9fefd7549285a}
+
+\begin{DoxyParams}{Parametry}
+\item[\mbox{\tt[in]} {\em wNapis}]-\/ wskaznik na napis reprezentujacy liczbe calkowita, \item[\mbox{\tt[in]} {\em Liczba}]-\/ wpiswany jest do tego parametru wynik konwersji napisu na liczbe.\end{DoxyParams}
+\begin{DoxyPrecond}{Warunek wstępny}
+Napis musi zawierac ciag cyfr, ktore nie sa oddzielne spacjami. 
+
+Musi on reprezntowac liczbe calkowita, ktora miesci sie w przedziale wartosci typu int.
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Zwraca}
+true -\/ jesli operacja konwersji zakonczyla sie poprawnie, 
+
+false -\/ w przypadku przeciwnym. 
+\end{DoxyReturn}
+
+
+Definicja w linii 25 pliku parametry.cpp.
+

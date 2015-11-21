@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>UkladRownan: Dokumentacja pliku parametry.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Wygenerowano przez Doxygen 1.7.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&nbsp;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&nbsp;strony</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&nbsp;plików</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath">
+    <ul>
+      <li><a class="el" href="dir_5acca7a69a50425ed15b726665a92491.html">prj</a>      </li>
+      <li><a class="el" href="dir_da40416fce0315f7465b5a29481a9543.html">inc</a>      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<h1>Dokumentacja pliku parametry.hh</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Struktura zawiera wszystkie pola odpowiadajace parametrom z jakimi moze zostac wywolany program. Posiada funkcje analizujaca parametry i Konwertujaca napis na liczbe.  
+<a href="#_details">Więcej...</a></p>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;limits&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
+<div class="dynheader">
+Wykres zależności załączania dla parametry.hh:</div>
+<div class="dyncontent">
+<div class="center"><img src="parametry_8hh__incl.png" border="0" usemap="#parametry_8hh" alt=""/></div>
+</div>
+<div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="parametry_8hh__dep__incl.png" border="0" usemap="#parametry_8hhdep" alt=""/></div>
+<map name="parametry_8hhdep" id="parametry_8hhdep">
+<area shape="rect" id="node3" href="main_8cpp.html" title="main.cpp" alt="" coords="5,83,85,112"/><area shape="rect" id="node5" href="parametry_8cpp.html" title="funkcje sluzacy do przetwarzania argumentow podanych w konsoli" alt="" coords="109,83,224,112"/></map>
+</div>
+
+<p><a href="parametry_8hh_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_parametry_wywolania.html">ParametryWywolania</a></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="parametry_8hh.html#ac4f92db10fea9b5bd0337dcfa87f1850">ROZMIAR_LINII</a>&nbsp;&nbsp;&nbsp;100</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="parametry_8hh.html#a6a3243d05d7fffdaeba9fefd7549285a">Konwertu_NapisNaLiczbe</a> (const char *wNapis, double &amp;Liczba)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Kowertuje napis zawierający znaki cyfr na liczbe reprezentowana przez ten napis.  <a href="#a6a3243d05d7fffdaeba9fefd7549285a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="parametry_8hh.html#aedf4a4e7e6152bd7ad1c411cf10cef3d">AnalizujParametry</a> (int argc, char *argv[], <a class="el" href="struct_parametry_wywolania.html">ParametryWywolania</a> &amp;Param)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Analizuje parametry linii wywolania i inicjalizuje odpowienie pola w strukturze "ParametryWywolania", ktore odpowiadaja poszczegolnym parametrom.  <a href="#aedf4a4e7e6152bd7ad1c411cf10cef3d"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Opis szczegółowy</h2>
+
+<p>Definicja w pliku <a class="el" href="parametry_8hh_source.html">parametry.hh</a>.</p>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="ac4f92db10fea9b5bd0337dcfa87f1850"></a><!-- doxytag: member="parametry.hh::ROZMIAR_LINII" ref="ac4f92db10fea9b5bd0337dcfa87f1850" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROZMIAR_LINII&nbsp;&nbsp;&nbsp;100</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="parametry_8hh_source.html#l00010">10</a> pliku <a class="el" href="parametry_8hh_source.html">parametry.hh</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="aedf4a4e7e6152bd7ad1c411cf10cef3d"></a><!-- doxytag: member="parametry.hh::AnalizujParametry" ref="aedf4a4e7e6152bd7ad1c411cf10cef3d" args="(int argc, char *argv[], ParametryWywolania &amp;Param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AnalizujParametry </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_parametry_wywolania.html">ParametryWywolania</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>Param</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>argc</em>&nbsp;</td><td>- ilosc parametrow z linii wyolania programu. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>argv</em>&nbsp;</td><td>- tablica napisow zawieraja (w postaci napisow) poszczegolne parametry wywolania programu. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>Param</em>&nbsp;</td><td>- jego pola odpowiadaja poszczegolnym parametrom wywolania.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="pre"><dt><b>Warunek wstępny:</b></dt><dd>argc, argv - zawieraja poprawna ilosc i tablice parametrow wywolania.</dd></dl>
+<dl class="post"><dt><b>Warunek końcowy:</b></dt><dd>Param - zostaje zainicjalizowana zgodnie z lista parametrow wywolania programu (o ile one wystapily). </dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>true - jeśli operacja się powiodła, tzn. wszystkie opcje wywołania i ich parametry są poprawne, </dd>
+<dd>
+false - w przypadku przeciwnym. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="parametry_8cpp_source.html#l00055">55</a> pliku <a class="el" href="parametry_8cpp_source.html">parametry.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="parametry_8hh_aedf4a4e7e6152bd7ad1c411cf10cef3d_cgraph.png" border="0" usemap="#parametry_8hh_aedf4a4e7e6152bd7ad1c411cf10cef3d_cgraph" alt=""/></div>
+<map name="parametry_8hh_aedf4a4e7e6152bd7ad1c411cf10cef3d_cgraph" id="parametry_8hh_aedf4a4e7e6152bd7ad1c411cf10cef3d_cgraph">
+<area shape="rect" id="node3" href="parametry_8hh.html#a6a3243d05d7fffdaeba9fefd7549285a" title="Kowertuje napis zawierający znaki cyfr na liczbe reprezentowana przez ten napis." alt="" coords="193,5,375,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a3243d05d7fffdaeba9fefd7549285a"></a><!-- doxytag: member="parametry.hh::Konwertu_NapisNaLiczbe" ref="a6a3243d05d7fffdaeba9fefd7549285a" args="(const char *wNapis, double &amp;Liczba)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Konwertu_NapisNaLiczbe </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>wNapis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&nbsp;</td>
+          <td class="paramname"> <em>Liczba</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Parametry:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>wNapis</em>&nbsp;</td><td>- wskaznik na napis reprezentujacy liczbe calkowita, </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>Liczba</em>&nbsp;</td><td>- wpiswany jest do tego parametru wynik konwersji napisu na liczbe.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="pre"><dt><b>Warunek wstępny:</b></dt><dd>Napis musi zawierac ciag cyfr, ktore nie sa oddzielne spacjami. </dd>
+<dd>
+Musi on reprezntowac liczbe calkowita, ktora miesci sie w przedziale wartosci typu int.</dd></dl>
+<dl class="return"><dt><b>Zwraca:</b></dt><dd>true - jesli operacja konwersji zakonczyla sie poprawnie, </dd>
+<dd>
+false - w przypadku przeciwnym. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="parametry_8cpp_source.html#l00025">25</a> pliku <a class="el" href="parametry_8cpp_source.html">parametry.cpp</a>.</p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>Wygenerowano Thu May 15 2014 17:10:37 dla UkladRownan programem&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>
